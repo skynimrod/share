@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0067)http://finance.sina.com.cn/iframe/876/20121021/3.html?from=aFinance -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<title>网页标题_栏目名称_频道名称_新浪网</title>
+<meta name="keywords" content=",">
+<meta name="description" content="此页面的说明">
+<link href="iframe_style.css" rel="stylesheet" type="text/css">
+
+<link href="iframe_style_finance.css" rel="stylesheet" type="text/css">
+<script src="iframe_common.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+<!--//--><![CDATA[//><!--
+//调整父级frame高度
+try{document.domain = "sina.com.cn";}catch(e){}
+var minHeight = 100;
+window.frameElement.height = minHeight;
+var SetHeightTimeObj = setInterval("window.frameElement.height = document.body.scrollHeight<minHeight?minHeight:document.body.scrollHeight;",50);
+window.onload = function(){clearInterval(SetHeightTimeObj);window.frameElement.height = document.body.scrollHeight<minHeight?minHeight:document.body.scrollHeight;}
+//--><!]]>
+</script>
+
+<script type="text/javascript">
+//雅黑字体处理
+var str = location.href;
+var str_arr = new Array();
+str_arr = str.split('fontstyle=');
+
+if (str_arr.length == 2) {
+		str_arr[1] =str_arr[1].replace(/&.*/, "");
+		if ( str_arr[1]=='yh'){
+			var yh_css = '<link href="http://tech.sina.com.cn/css/yahei/717/2012/1119/53.css" rel="stylesheet" type="text/css" />';
+			document.write(yh_css);
+		}
+
+		if ( str_arr[1]=='noxpyh'){
+			//xp系统不应用雅黑字体 daichang add 201212071043
+			(function() {
+				var isXP = function() {
+					var sUserAgent = navigator.userAgent;
+					var isWin = (navigator.platform == "Win32") || (navigator.platform == "Windows");
+					if(isWin) {
+						var isWinXP = sUserAgent.indexOf("Windows NT 5.1") > -1 || sUserAgent.indexOf("Windows XP") > -1;
+						if(isWinXP) return true;
+					}
+					return false;
+				}();
+				if(!isXP) {
+					var yhStyle = 'body{font-family: "Microsoft Yahei","微软雅黑","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",宋体 !important;}';
+					var style="<style type=\"text/css\">" +"\n"+ yhStyle+"\n"+ "</style>";
+					document.write(style);
+
+				}
+			})();
+		}
+	}
+</script>
+</head>
+<body>
+<div class="blk_01 finance_blk" id="top_news_02">
+    <div class="bc">
+		<div class="tit tit_02"><h2><a href="http://blog.sina.com.cn/lm/stock/" target="_blank">热点博客</a></h2></div>
+    	<ul class="list pot list_01">
+<!-- SEO抓取区域begin -->
+				 <li><a href="http://blog.sina.com.cn/s/blog_50c88c400102vdml.html?tj=fina" target="_blank">张化桥：日本究竟出了什么大问题？</a></li> <li><a href="http://blog.sina.com.cn/s/blog_490280f90102vh11.html?tj=fina" target="_blank">马跃成：政府回购商品房似一副毒药</a></li> <li><a href="http://blog.sina.com.cn/s/blog_5ef1fe090102vhgv.html?tj=fina" target="_blank">陈思进：人民币对外贬值利大于弊</a></li> <li><a href="http://blog.sina.com.cn/s/blog_467a66b00102vgte.html?tj=fina" target="_blank">陶冬：美国增速降 希腊风险增 </a></li> <li><a href="http://blog.sina.com.cn/s/blog_46fdfbdd0102vfqg.html?tj=fina" target="_blank">水皮：阿里的麻烦还在后面</a></li> <li><a href="http://blog.sina.com.cn/s/blog_617c39a40102vc3q.html?tj=fina" target="_blank">冉学东：高层为何对股市去杠杆不手软</a></li> <li><a href="http://blog.sina.com.cn/s/blog_7fd3f2570102vjsv.html?tj=fina" target="_blank">洪榕：如何应对牛市途中的第一次大考</a></li> <li><a href="http://blog.sina.com.cn/s/blog_46facb4d0102v9h0.html?tj=fina" target="_blank">谢百三：把牛市当作熊市做 </a></li> <li><a href="http://blog.sina.com.cn/s/blog_49818dcb0102vki6.html?tj=fina" target="_blank">叶檀：回购商品房充当保障房看似很美</a></li> <li><a href="http://blog.sina.com.cn/s/blog_4120db8b0102vehx.html?tj=fina" target="_blank">郎咸平：新预算法将中国带入新境界</a></li>
+<!-- SEO抓取区域end -->
+
+		</ul>
+    </div>
+</div>
+
+</body></html>

@@ -1,0 +1,233 @@
+/* [31,462,275] published at 2015-01-15 15:10:00 */
+
+a{color:#072885;text-decoration:none;}
+a:visited {color:#5d7fa2;}
+a:hover, a:active, a:focus { color:#0576ec; text-decoration:underline; }
+.blkContainer {border-top:solid 3px #08237a;}
+.cc_blk_01 { border-top:solid 3px #08237a;}
+.blkContainerSblk h1{color: #072885;}
+.blkBreadcrumb .blkBreadcrumbLink{color: #072885}
+.blkBreadcrumb a:link, .blkBreadcrumb a:visited { color:#072885 }
+.blkBreadcrumb a:hover { color:#0576ec }
+.artInfo { color:#3d6cb0; }
+/**/
+.page a,.page a:visited{border:1px #b2c6da solid; color:#3d6cb0; text-decoration:none;}
+.page span{border:1px #ddd solid;color:#3d6cb0;}
+.page span.cur{background:#072885; font-weight:bold; color:#fff; border-color:#072885}
+.page a:hover,.page a:active{ border:1px #072885 solid;color:#3d6cb0; text-decoration:none}
+
+/**/
+.ctit_01 h2,.ctit_02 h2{padding-left:14px;color: #072885;background:url(http://i0.sinaimg.cn/cj/deco/2012/1018/0926_finance_zyc_images.1.png) no-repeat 0 -277px; }
+.ctit_01 h2 a:link, .ctit_01 h2 a:visited,.ctit_02 h2 a:link, .ctit_02 h2 a:visited { color:#072885 }
+.ctit_01 h2 a:hover, .ctit_02 h2 a:hover{ color:#c00 }
+
+/**/
+.cc_menu01 span{  color:#3d6cb0; position: relative;}
+.cc_menu01 span.selected{ color:#09227c; }
+.guessT{width:270px}/*1023*/
+.guessT h2{position:relative;width:80px;}/*1023*/
+.guessT .new{background:url(http://i3.sinaimg.cn/cj/deco/2012/1018/0926_finance_zyc_comment_new.png) no-repeat;_background:none;_FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='http://i3.sinaimg.cn/cj/deco/2012/1018/0926_finance_zyc_comment_new.png');width:27px; height:13px;right:-15px; top:2px; position:absolute;z-index: 9}/*1023*/
+.cc_changeit{margin-top:3px;}/*1023*/
+.cc_changeit a{ display:block; background:url(http://i0.sinaimg.cn/cj/deco/2012/1018/0926_finance_zyc_images.1.png) no-repeat 0px -424px;text-indent:-9999em;}
+.cc_changeit a:hover{background-position: 0px -464px;}
+
+.news_hyfl{margin-top: 15px;border: 1px solid #e5e5e5;overflow:hidden;}
+
+/* 股票行情图start */
+.ct_hqimg {width:545px; border:1px solid #c3c3c3; background:#fff; margin:0px auto;}
+.ct_hqimg div img {border:none;}
+.ct_hqimg .to_page {height:28px; border-top:1px solid #c3c3c3; background:url(http://i3.sinaimg.cn/cj/news/2009/0525/hq_img_bg.gif) repeat-x;position: relative;}
+.ct_hqimg .to_page a:link {line-height:28px; padding-left:27px;height:28px; font-size:12px; width:110px; margin:0px auto;color:#072885;}
+.ct_hqimg .to_page a:visited {color:#5d7fa2;}
+.ct_hqimg .to_page a:hover,.ct_hqimg .to_page a:active,.ct_hqimg .to_page a:focus {color:#0576ec;} 
+
+.ct_hqimg .hotSe{position: absolute;display: block;width: 8px;height: 8px;background: url(http://i0.sinaimg.cn/cj/deco/2012/1018/0926_finance_zyc_images.1.png) 0 -368px no-repeat;top:4px;left: 77px;}
+/* 股票行情图end */
+
+.content_newsBlk{width: 550px;margin: 0 auto;padding-bottom: 25px;}
+.content_leftDiv{float: left;width: 270px;}
+
+.content_rightDiv{float: left;width: 270px;margin-left: 9px;}
+.content_newsBlk .list_01 li{line-height:24px;}
+/* 正文中翻页 */
+.blkContainerSblkCon p.page,.page{ font-family: "宋体", sans-serif; text-align:center;font-size:12px;line-height:21px; color:#999;padding-top:35px;}
+#artibody p.page a:link{color:#3d6cb0;}
+#artibody .page span, #artibody .page a{padding:4px 8px; background:#fff;margin:0 1px}
+#artibody .page a, #artibody .page a:visited{border:1px #b2c6da solid; color:#3d6cb0; text-decoration:none;}
+#artibody .page span{border:1px #b2c6da solid;color:#3d6cb0;}
+#artibody .page span.cur{background:#072885; font-weight:bold; color:#fff; border-color:#072885}
+#artibody p.page a:hover,#artibody p.page a:active{ border:1px #072885 solid;color:#fff; text-decoration:none;background:#072885; }
+/* 正文内容链接颜色 
+.blkContainerSblkCon a:link{color:#b60C0C;}
+.blkContainerSblkCon a:visited{color:#c46e71;}
+.blkContainerSblkCon a:hover{color:#cc0000;}*/
+/*相关股票*/
+.info_hyfl {margin:20px auto 0px;  font-size:14px; width:558px;overflow:hidden;}
+.news_hyfl {border:1px solid #C1D9F4; margin:10px auto 20px; padding:2px 14px 5px 14px; background:#fff; width:520px;overflow:hidden;}
+.news_hyfl #for_loader {display:none;}
+.news_hyfl #title_hyfl {font-size:14px; font-weight:bold; height:30px; line-height:30px;border-bottom:1px solid #DCE5F4;color:#072885;}
+.news_hyfl #title_hyfl span {float:right; font-size:12px; font-weight:normal;}
+.news_hyfl dl {clear:both; margin:0px; padding:0px;width:650px;}
+.news_hyfl dd {width:300px; float:left; height:24px; line-height:24px; padding:0px; margin-right:15px;}
+.news_hyfl ul {list-style:none; padding:0 0px;}
+.news_hyfl li {float:left; height:24px; line-height:24px; width:75px; text-align:left; padding-right:10px;}
+.news_hyfl .clear {clear:both; height:0px; font-size:0px; overflow:hidden;}
+
+#media_name .wbA, .wbA:visited{color:#072885!important;}
+#media_name .wbA:hover{color:#0576EC!important;}
+
+.content_aboutNews  .clist a:link { color:#072885;}
+.content_aboutNews .clist a:visited { color:#5d7fa2;}
+.content_aboutNews .clist a:hover { color:#0576eb; }
+
+/*环球股指 1023*/
+.news_gi {border: 1px solid #C1D9F4;margin: 10px auto 20px;padding: 5px;background: #fff;width: 554px;     font-size: 12px; }
+.news_gi #for_loader {display: none; }
+.news_gi #title_gi {font-size: 14px;font-weight: bold;line-height: 30px;color:#072885;height:30px;border-bottom:1px solid #DCE5F4;width:520px;margin:0 auto }
+.news_gi #title_gi b{font-weight:normal;color:#0576EC;font-size:12px;}
+.news_gi #title_gi span {float: right;font-size: 12px;font-weight: normal; }
+.news_gi dl {clear: both;margin: 0px;padding: 0px 0 0 20px; }
+.news_gi dd {width: 265px;float: left;height: 20px;line-height: 20px;padding: 0px;margin: 0px; }
+.news_gi ul {list-style: none;padding: 0;margin: 0px; }
+.news_gi .up {color: #008000; }
+.news_gi .down {color: #f00; }
+.news_gi li {float: left;height: 20px;line-height: 20px;text-align: right;padding-right: 10px; }
+.news_gi ul li.gi_n {width: 120px;text-align: left;padding: 0px;color: #072885; }
+.news_gi .gi_p {width: 55px; }
+.news_gi .gi_c {width: 45px; }
+.news_gi .clear {clear: both;height: 0px;font-size: 0px;overflow: hidden; }
+/*微博人名1023*/
+a.wt_article_link:link, a.wt_article_link:visited{ color:#3d6cb0;}
+a.wt_article_link:hover{ background-color:#eaf3ff; color:#3d6cb0; text-decoration:none}
+
+.tit_02{ height:30px;}
+.tit_02 h2{ font-size:16px; font-family:"微软雅黑"; padding:9px 0 0 13px;font-weight:bold;color:#072885;}
+.tit_02 h2 a:link, .tit_02 h2 a:visited{color:#072885;font-size:16px; }
+.tit_02 h2 a:hover{color:#3D6CB0;font-size:16px; }
+
+.cc_list_01t {padding: 9px 0 0 5px;}
+
+.cc_list_01 a:link{color:#072885;}
+.cc_list_01 a:visited{color:#5d7fa2;}
+.cc_list_01 a:hover{color:#0576ec;}
+
+/*.clist_02 li{font-size:12px;}*/
+.blkContainerPblk{padding-bottom:20px;}
+.blkBreadcrumb .blkBreadcrumbSearch{position:relative;}
+
+/* 针对正文抓站内容再编辑 */
+table.tb01{border-collapse:separate; border:1px #c6d8ee solid; border-bottom:none; border-left:none; background:#eef5fd;}
+table.tb01 td,table.tb01 th{border:1px #c6d8ee solid; border-right:none; border-top:none; background:#eef5fd; font-size:12px; line-height:164.28%; text-align:left; padding:0 5px;}
+table.tb01 p{font-size:12px; text-align:left;margin:5px 0;}
+table.tb01 img{border:none;}
+
+.img_wrapper {
+    color: #666666;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 5px auto;}
+
+/* 猜你喜欢改统一样式 */
+.content_aboutNews_new{padding-right:30px;}
+.guess_dw #guessulikeMain .cc_list_01t li {
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding-left: 13px;
+    white-space: nowrap;
+}
+.guess_dw #guessulikeMain .cc_list_01 li {
+    background: url("http://i0.sinaimg.cn/ent/deco/2012/0907/content/ent_zxh_0816_01v3.png") no-repeat scroll -47px -90px transparent;
+    height: 23px;
+    line-height: 23px;
+    padding-left: 13px;
+    white-space: nowrap;
+}
+.guess_dw #guessulikeMain .cc_list_01t {
+    padding-left: 3px !important;
+}
+/* 保存打印关闭 */
+.content_print a.savaPage_link {padding-top:3px;}
+.content_print a.printPage_link {padding-top:3px;}
+.content_print a.closePage_link {padding-top:3px;}
+/*猜你喜欢*/
+.guess-view-list #guessulikeMain .cc_list_01t li{font-size: 12px;height:24px;line-height: 24px;}
+.guess-view-list .news-list-a{height: 123px;}
+.guess-view-list .news-list-a .cc_list_01t{padding:2px 0 0 3px;}
+.ctit_01,.guess-view-list .ctit_02{padding-left:14px;background:url(http://i0.sinaimg.cn/cj/deco/2012/1018/0926_finance_zyc_images.1.png) no-repeat 0 -277px;}
+.ctit_01 h2,.guess-view-list .ctit_02 h2{padding-left:0;background: none;}
+.ctit_01 h2.new,.ctit_02 h2.new{ background:url(http://i2.sinaimg.cn/IT/deco/2012/1018/content/zwy_tech_yanIcon.png) 100% 50% no-repeat; padding-right:26px;}
+/*猜你喜欢*/
+.ctit_02 .changeit a{ display:block; background:url(http://i0.sinaimg.cn/cj/deco/2012/1018/0926_finance_zyc_images.1.png) no-repeat 0px -424px;text-indent:-9999em;}
+.ctit_02 .changeit a:hover{background-position: 0px -464px;}
+
+/*添加侧边固定按钮daichang 20130204*/
+.top_btn,.weibo_btn,.cmnt_btn{width:50px;height:50px;position: static;margin:0;margin-top:5px;}
+/*返回顶部按钮*/
+.top_btn .toplink { height: 50px; width: 50px;background:url(http://i0.sinaimg.cn/dy/deco/2012/1227/news_zxh_content_btn_bg.png) no-repeat 0 -110px;  filter:Alpha(Opacity=35) !important; opacity:0.35; }
+.top_btn .toplink:hover { background:url(http://i0.sinaimg.cn/dy/deco/2012/1227/news_zxh_content_btn_bg.png) no-repeat 0 -110px;filter:Alpha(Opacity=50) !important; opacity:0.5;}
+/*转发到微博按钮*/
+.weibo_btn { color: #4C4C4C; }
+.weibo_btn .wt_link, .weibo_btn .wt_link:visited {height: 50px; width: 50px;background:url(http://i0.sinaimg.cn/dy/deco/2012/1227/news_zxh_content_btn_bg.png) no-repeat; border:none;line-height:400px; padding: 0; filter:Alpha(Opacity=35); opacity:0.35;}
+.weibo_btn .wt_link:hover { filter:Alpha(Opacity=50); opacity:0.5;}
+/*发表评论按钮*/
+.cmnt_btn { color: #4C4C4C; }
+.cmnt_btn .cmnt_link, .cmnt_btn .cmnt_link:visited {height: 50px; width: 50px; display:block;background:url(http://i0.sinaimg.cn/dy/deco/2012/1227/news_zxh_content_btn_bg.png) no-repeat 0 -55px; font-weight:bold; padding:31px 0 0; text-align:center; font-family:arial; color:#fff;width: 50px; height:19px;filter:Alpha(Opacity=35); opacity:0.35;}
+.cmnt_btn .cmnt_link:hover {filter:Alpha(Opacity=50); opacity:0.5; text-decoration:none; color:#fff;}
+
+.side-btns-wrap{width:50px;left: 50%; margin:0 0 0 485px;position: fixed; _position:absolute;bottom: 60px;z-index:100;display:none;}
+.side-btns-wrap-resize{margin-left:420px;}
+/* /添加侧边固定按钮daichang 20130204*/
+
+/*20130222 猜你喜欢*/
+.gulpro { float:left; width:297px; height:155px; overflow:hidden; zoom:1; position:relative; }
+.gulpro-line1 { height:30px; line-height:30px; }
+.gulpro-title { font-weight:bold;font-size:16px; font-family:"微软雅黑"; color:#010101; line-height:30px; float:left;color: #072885; }
+.gulpro-dot { float:right; height:16px; padding:10px 0px 7px 0; margin-right:7px; display:inline; }
+.gulpro-dot span { float:left; margin-left:5px; display:inline; width:8px; height:8px; background:#d3d3d3; cursor:pointer; font-size:0px; overflow:hidden; }
+.gulpro-dot span.current { background:#e23f40; cursor:normal; }
+.gulpro-main { padding-top:0px;background:url(http://i3.sinaimg.cn/dy/stencil/sysimages/sysimg/loading_01.gif) 50% 50% no-repeat; width:297px; height:120px; overflow:hidden; }
+.gulpro-main ul { background:#fff; width:297px; height:120px; float:left; }
+.gulpro-main li { width:284px; overflow:hidden; white-space:nowrap; height:24px; line-height:24px; background:url(http://i0.sinaimg.cn/ent/deco/2012/0907/content/ent_zxh_0816_01v3.png) no-repeat -47px -90px; padding-left:13px; }
+.gulpro-video a { display:inline-block;  background:url(http://i0.sinaimg.cn/ent/deco/2012/0907/content/ent_zxh_0816_01v3.png) no-repeat -31px -193px; _background-position:-31px -199px; padding-left:23px;}
+.gulpro-slide a { display:inline-block;  background:url(http://i3.sinaimg.cn/dy/deco/2012/0905/cnxh-icon.gif) 3px 6px no-repeat; padding-left:23px;}
+.gulpro-leftarr { padding-top:3px; display:none; margin-right:2px; float:right; width:22px; height:22px; cursor:pointer; background:url(http://i0.sinaimg.cn/dy/deco/2013/0206/guess.v1.pro.arr.png) 0 3px no-repeat; font-size:0px; overflow:hidden; }
+.gulpro-rightarr { padding-top:3px; display:none; margin-right:7px; float:right; width:22px; height:22px; cursor:pointer; background:url(http://i0.sinaimg.cn/dy/deco/2013/0206/guess.v1.pro.arr.png) 0 -47px no-repeat; font-size:0px; overflow:hidden; }
+.gulpro-login { display:none; padding-left:13px; height:20px; line-height:20px; color:#999; }
+.gulpro-wbzh { display:inline-block; height:20px; line-height:20px; padding-left:17px; background:url(http://i0.sinaimg.cn/dy/2011/0905/U6893P1DT20110905170320.gif) 0 50% no-repeat; }
+.gulpro-login .gulpro-loginbtn:link,
+.gulpro-login .gulpro-loginbtn:visited { color:#f00; text-decoration:none; }
+.gulpro-login .gulpro-loginbtn:hover { color:#f00; text-decoration:underline; }
+
+/* pad */
+
+/* app tuiguang */
+.xb_new_finance_app{background:#eee;vertical-align:middle;padding:5px;}
+.xb_new_finance_app img{width:40px;height:40px;vertical-align:middle;margin-right:10px;}
+.xb_new_finance_app span{line-height:40px;vertical-align:middle;}
+.xb_new_finance_app span.licai{display:block; line-height:30px;}
+
+/* 文章引文 */
+.blkContainerSblkCon blockquote{padding:5px 20px;background:url(http://i1.sinaimg.cn/cj/deco/2013/1212/imgs/b08.png) no-repeat 0 0 #f4f4f4;margin:0px;clear:both;margin:10px 0;}
+
+.blkContainerSblk iframe{_width:500px!important;}
+
+/* 淘宝广告 */
+#PublicRelation10{display:block !important;}
+
+/*文章关键字*/
+.art_keywords{ margin-top: 5px;}
+
+/* share */
+.content_shareto{height:0px!important; margin-top:0px!important;_height:0px;_margin-top:-90px!important;}
+.weibo_share_w{bottom:-10px!important;*bottom:10px!important;_bottom:-78px!important;}
+#sinashareto{height:30px!important;}
+.J_Comment_Count_Txt{bottom:-6px!important;*bottom:12px!important;_bottom:-70px!important;}
+
+/* 文章微信 */
+.fin_art_weixin{font-size:14px; line-height:23px; padding:0 19px 0;}
+.fin_art_weixin p{margin:0 0 15px 0}
+
+.hkstock_level2{margin-top:10px;}
+.hk_level2{color:red !important; font-size:14px !important; line-height:30px !important;}

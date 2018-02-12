@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0067)http://finance.sina.com.cn/iframe/876/20121021/2.html?from=aFinance -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<title>网页标题_栏目名称_频道名称_新浪网</title>
+<meta name="keywords" content=",">
+<meta name="description" content="此页面的说明">
+<link href="iframe_style.css" rel="stylesheet" type="text/css">
+
+<link href="iframe_style_finance.css" rel="stylesheet" type="text/css">
+<script src="iframe_common.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+<!--//--><![CDATA[//><!--
+//调整父级frame高度
+try{document.domain = "sina.com.cn";}catch(e){}
+var minHeight = 100;
+window.frameElement.height = minHeight;
+var SetHeightTimeObj = setInterval("window.frameElement.height = document.body.scrollHeight<minHeight?minHeight:document.body.scrollHeight;",50);
+window.onload = function(){clearInterval(SetHeightTimeObj);window.frameElement.height = document.body.scrollHeight<minHeight?minHeight:document.body.scrollHeight;}
+//--><!]]>
+</script>
+
+<script type="text/javascript">
+//雅黑字体处理
+var str = location.href;
+var str_arr = new Array();
+str_arr = str.split('fontstyle=');
+
+if (str_arr.length == 2) {
+		str_arr[1] =str_arr[1].replace(/&.*/, "");
+		if ( str_arr[1]=='yh'){
+			var yh_css = '<link href="http://tech.sina.com.cn/css/yahei/717/2012/1119/53.css" rel="stylesheet" type="text/css" />';
+			document.write(yh_css);
+		}
+
+		if ( str_arr[1]=='noxpyh'){
+			//xp系统不应用雅黑字体 daichang add 201212071043
+			(function() {
+				var isXP = function() {
+					var sUserAgent = navigator.userAgent;
+					var isWin = (navigator.platform == "Win32") || (navigator.platform == "Windows");
+					if(isWin) {
+						var isWinXP = sUserAgent.indexOf("Windows NT 5.1") > -1 || sUserAgent.indexOf("Windows XP") > -1;
+						if(isWinXP) return true;
+					}
+					return false;
+				}();
+				if(!isXP) {
+					var yhStyle = 'body{font-family: "Microsoft Yahei","微软雅黑","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",宋体 !important;}';
+					var style="<style type=\"text/css\">" +"\n"+ yhStyle+"\n"+ "</style>";
+					document.write(style);
+
+				}
+			})();
+		}
+	}
+</script>
+</head>
+<body>
+<div class="blk_01 finance_blk" id="top_news_02">
+    <div class="bc">
+	<div class="tit tit_02"><h2>微博转发最多</h2></div>
+    	<div id="cont01" class="cont02">
+        	<ul class="list list_02">
+						<li><a href="中央发布2015年一号文件(全文) 中央 一号文件 农业_新浪财经_新浪网.htm" target="_blank">中央发布2015年一号文件(全文)</a></li>
+<li><a href="http://finance.sina.com.cn/chanjing/sdbd/20150201/151721447615.shtml" target="_blank">报道称毛晓峰与女员工私通 追女演员见面就送车</a></li>
+<li><a href="http://finance.sina.com.cn/chanjing/sdbd/20150201/111221447270.shtml" target="_blank">争议海底捞:离职员工称内部勾心斗角 心累</a></li>
+<li><a href="http://finance.sina.com.cn/leadership/20150201/175221447766.shtml" target="_blank">马云目标是苹果和谷歌：腾讯百度已远远滞后阿里</a></li>
+<li><a href="http://finance.sina.com.cn/china/20150201/191621447891.shtml" target="_blank">2015年中央一号文件发布：加大惠农政策力度</a></li>
+
+<!--cache  time:2015-02-01 21:07:01 run time:0.01329s-->
+
+			</ul>
+        </div>
+
+    </div>
+</div>
+
+
+</body></html>

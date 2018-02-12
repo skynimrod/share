@@ -1,0 +1,18 @@
+var url = p_lm +  p_name + '.js';
+        	while (url.indexOf("/") >= 0)		 
+        	{url = url.replace("/", "%2F");}
+        	url="/unit/list.html?s=disclosure%2F"+url;
+p_lm == fulltext/plate/
+
+p_name = shmblatest_24h
+
+p_name = 'shmblatest_24h';
+p_lm = 'fulltext/plate/';
+
+url = fulltext/plate/shmblatest_24h.js
+
+url = /unit/list.html?s=disclosure%2F" + url
+
+      /unit/list.html?s=disclosure%2Ffulltext/plate/shmblatest_24h.js
+
+http://www.cninfo.com.cn/unit/list.html?s=disclosure%2Ffulltext/plate/shmblatest_24h.js

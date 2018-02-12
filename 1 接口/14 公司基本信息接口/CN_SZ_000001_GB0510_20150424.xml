@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+StockCode=000001
+ISIN=CNE000000040
+CompanyEnglishName=Ping An Bank Co., Ltd.
+CompanyChineseName=平安银行股份有限公司
+ReportType=001
+DocType=XML
+DocDate=2015-04-23 20:49:23
+FileDate=2015-04-23 20:49:23
+Language=0
+-->
+<xbrli:xbrl xmlns:cn-fr-common="http://www.csrc.gov.cn/cn/fr/common/2007-12-31" xmlns:csrc-common="http://www.csrc.gov.cn/cn/csrc/common/2007-12-31" xmlns:csrc-nf="http://www.csrc.gov.cn/cn/csrc/common/nf/2007-12-31" xmlns:csrc-pfs="http://www.csrc.gov.cn/cn/csrc/common/pfs/2007-12-31" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <link:schemaRef xlink:type="simple" xlink:href="http://xbrl.cninfo.com.cn/cn/csrc/rpt/qr/2007-12-31/csrc-rpt-qr-2007-12-31.xsd" />
+  <xbrli:context id="dur_20150101_20150331">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-03-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="dur_20150101_20150331_A">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-03-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <csrc-common:DataState>调整后的值</csrc-common:DataState>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="dur_20150101_20150331_B">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-03-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <csrc-common:DataState>调整前的值</csrc-common:DataState>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="dur_20150101_20150331_C">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+      <xbrli:segment>
+        <csrc-common:StatementsClassification>合并</csrc-common:StatementsClassification>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-03-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="dur_20150101_20150331_P">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+      <xbrli:segment>
+        <csrc-common:StatementsClassification>母公司</csrc-common:StatementsClassification>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2015-01-01</xbrli:startDate>
+      <xbrli:endDate>2015-03-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="dur_20140101_20140331">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-03-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="dur_20140101_20140331_A">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-03-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <csrc-common:DataState>调整后的值</csrc-common:DataState>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="dur_20140101_20140331_C">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+      <xbrli:segment>
+        <csrc-common:StatementsClassification>合并</csrc-common:StatementsClassification>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-03-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="dur_20140101_20140331_P">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+      <xbrli:segment>
+        <csrc-common:StatementsClassification>母公司</csrc-common:StatementsClassification>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-01-01</xbrli:startDate>
+      <xbrli:endDate>2014-03-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="dur_20130101_20130331_A">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-03-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <csrc-common:DataState>调整后的值</csrc-common:DataState>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="dur_20130101_20130331_B">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2013-01-01</xbrli:startDate>
+      <xbrli:endDate>2013-03-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <csrc-common:DataState>调整前的值</csrc-common:DataState>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="ins_20150101">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2015-01-01</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="ins_20150101_A">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2015-01-01</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <csrc-common:DataState>调整后的值</csrc-common:DataState>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="ins_20150101_C">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+      <xbrli:segment>
+        <csrc-common:StatementsClassification>合并</csrc-common:StatementsClassification>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2015-01-01</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="ins_20150101_P">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+      <xbrli:segment>
+        <csrc-common:StatementsClassification>母公司</csrc-common:StatementsClassification>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2015-01-01</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="ins_20131231_A">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2013-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <csrc-common:DataState>调整后的值</csrc-common:DataState>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="ins_20131231_B">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2013-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <csrc-common:DataState>调整前的值</csrc-common:DataState>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="ins_20140101_C">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+      <xbrli:segment>
+        <csrc-common:StatementsClassification>合并</csrc-common:StatementsClassification>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2014-01-01</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="ins_20140101_P">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+      <xbrli:segment>
+        <csrc-common:StatementsClassification>母公司</csrc-common:StatementsClassification>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2014-01-01</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="ins_20150331">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2015-03-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="ins_20150331_A">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2015-03-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <csrc-common:DataState>调整后的值</csrc-common:DataState>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="ins_20150331_B">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2015-03-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <csrc-common:DataState>调整前的值</csrc-common:DataState>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="ins_20150331_C">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+      <xbrli:segment>
+        <csrc-common:StatementsClassification>合并</csrc-common:StatementsClassification>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2015-03-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="ins_20150331_P">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+      <xbrli:segment>
+        <csrc-common:StatementsClassification>母公司</csrc-common:StatementsClassification>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2015-03-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="ins_20140331_C">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+      <xbrli:segment>
+        <csrc-common:StatementsClassification>合并</csrc-common:StatementsClassification>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2014-03-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="ins_20140331_P">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.szse.cn">000001</xbrli:identifier>
+      <xbrli:segment>
+        <csrc-common:StatementsClassification>母公司</csrc-common:StatementsClassification>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2014-03-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:unit id="CNY">
+    <xbrli:measure>iso4217:CNY</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="EPS">
+    <xbrli:divide>
+      <xbrli:unitNumerator>
+        <xbrli:measure>iso4217:CNY</xbrli:measure>
+      </xbrli:unitNumerator>
+      <xbrli:unitDenominator>
+        <xbrli:measure>xbrli:shares</xbrli:measure>
+      </xbrli:unitDenominator>
+    </xbrli:divide>
+  </xbrli:unit>
+  <xbrli:unit id="Pure">
+    <xbrli:measure>xbrli:pure</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="Shares">
+    <xbrli:measure>xbrli:shares</xbrli:measure>
+  </xbrli:unit>
+  <cn-fr-common:OwnersEquity contextRef="ins_20150331_B" unitRef="CNY" decimals="2">136703744455.18</cn-fr-common:OwnersEquity>
+  <csrc-pfs:MajorAccountingData_IncreaseOrDecreaseInOwnersEquityOrShareholdersEquityEndReportPeriodOverEndLastYear contextRef="ins_20150331_A" unitRef="Pure" decimals="4">0.0439</csrc-pfs:MajorAccountingData_IncreaseOrDecreaseInOwnersEquityOrShareholdersEquityEndReportPeriodOverEndLastYear>
+  <cn-fr-common:BasicEarningsPerShare contextRef="dur_20150101_20150331_B" unitRef="EPS" decimals="INF">0.41</cn-fr-common:BasicEarningsPerShare>
+  <csrc-pfs:MajorFinancialIndicators_IncreaseOrDecreaseInBasicEarningsPerShareReportPeriodOverPreviousPeriod contextRef="dur_20150101_20150331_A" unitRef="Pure" decimals="4">0.1081</csrc-pfs:MajorFinancialIndicators_IncreaseOrDecreaseInBasicEarningsPerShareReportPeriodOverPreviousPeriod>
+  <cn-fr-common:OwnersNetProfitAttributableToParent contextRef="dur_20150101_20150331_B" unitRef="CNY" decimals="2">5628858973.67</cn-fr-common:OwnersNetProfitAttributableToParent>
+  <csrc-pfs:MajorFinancialIndicators_IncreaseOrDecreaseInWeightedAverageReturnOnEquityReportPeriodOverPreviousPeriod contextRef="dur_20150101_20150331_A" unitRef="Pure" decimals="4">-0.0071</csrc-pfs:MajorFinancialIndicators_IncreaseOrDecreaseInWeightedAverageReturnOnEquityReportPeriodOverPreviousPeriod>
+  <csrc-pfs:MajorAccountingData_IncreaseOrDecreaseInNetProfitAttributableToShareholdersListedCompanyReportPeriodOverPreviousPeriod contextRef="dur_20150101_20150331_A" unitRef="Pure" decimals="4">0.1138</csrc-pfs:MajorAccountingData_IncreaseOrDecreaseInNetProfitAttributableToShareholdersListedCompanyReportPeriodOverPreviousPeriod>
+  <csrc-pfs:MajorAccountingData_NetProfitNetNon-recurringGainsLossesAttributableToShareholdersListedCompany contextRef="dur_20150101_20150331_B" unitRef="CNY" decimals="2">5636227594.36</csrc-pfs:MajorAccountingData_NetProfitNetNon-recurringGainsLossesAttributableToShareholdersListedCompany>
+  <csrc-pfs:MajorAccountingData_IncreaseOrDecreaseInNetProfitNetNon-recurringGainsLossesAttributableToShareholdersListedCompanyReportPeriodOverPreviousPeriod contextRef="dur_20150101_20150331_A" unitRef="Pure" decimals="4">0.1127</csrc-pfs:MajorAccountingData_IncreaseOrDecreaseInNetProfitNetNon-recurringGainsLossesAttributableToShareholdersListedCompanyReportPeriodOverPreviousPeriod>
+  <csrc-pfs:MajorAccountingData_IncreaseOrDecreaseInNetCashFlowsFromOperatingActivitiesReportPeriodOverPreviousPeriod contextRef="dur_20150101_20150331_A" unitRef="Pure" decimals="4">-0.8087</csrc-pfs:MajorAccountingData_IncreaseOrDecreaseInNetCashFlowsFromOperatingActivitiesReportPeriodOverPreviousPeriod>
+  <csrc-pfs:MajorFinancialIndicators_WeightedAverageReturnOnEquity contextRef="dur_20150101_20150331_B" unitRef="Pure" decimals="4">0.1583</csrc-pfs:MajorFinancialIndicators_WeightedAverageReturnOnEquity>
+  <cn-fr-common:TotalProfit contextRef="dur_20150101_20150331_B" unitRef="CNY" decimals="2">7436858973.67</cn-fr-common:TotalProfit>
+  <cn-fr-common:DilutedEarningsPerShare contextRef="dur_20150101_20150331_B" unitRef="EPS" decimals="INF">0.41</cn-fr-common:DilutedEarningsPerShare>
+  <csrc-pfs:MajorFinancialIndicators_IncreaseOrDecreaseInDilutedEarningsPerShareReportPeriodOverPreviousPeriod contextRef="dur_20150101_20150331_A" unitRef="Pure" decimals="4">0.1081</csrc-pfs:MajorFinancialIndicators_IncreaseOrDecreaseInDilutedEarningsPerShareReportPeriodOverPreviousPeriod>
+  <cn-fr-common:NetCashFlowsFromOperatingActivities contextRef="dur_20150101_20150331_B" unitRef="CNY" decimals="2">11494574870.99</cn-fr-common:NetCashFlowsFromOperatingActivities>
+  <cn-fr-common:OperatingIncome contextRef="dur_20150101_20150331_B" unitRef="CNY" decimals="2">20670995263.11</cn-fr-common:OperatingIncome>
+  <csrc-pfs:MajorAccountingData_IncreaseOrDecreaseInOperatingIncomeReportPeriodOverPreviousPeriod contextRef="dur_20150101_20150331_A" unitRef="Pure" decimals="4">0.2839</csrc-pfs:MajorAccountingData_IncreaseOrDecreaseInOperatingIncomeReportPeriodOverPreviousPeriod>
+  <cn-fr-common:Assets contextRef="ins_20150331_B" unitRef="CNY" decimals="2">2304774565818.66</cn-fr-common:Assets>
+  <csrc-pfs:MajorAccountingData_IncreaseOrDecreaseInTotalAssetsEndReportPeriodOverEndLastYear contextRef="ins_20150331_A" unitRef="Pure" decimals="4">0.0541</csrc-pfs:MajorAccountingData_IncreaseOrDecreaseInTotalAssetsEndReportPeriodOverEndLastYear>
+  <cn-fr-common:OwnersEquity contextRef="ins_20150101_A" unitRef="CNY" decimals="2">130948957782.32</cn-fr-common:OwnersEquity>
+  <cn-fr-common:BasicEarningsPerShare contextRef="dur_20140101_20140331_A" unitRef="EPS" decimals="INF">0.37</cn-fr-common:BasicEarningsPerShare>
+  <cn-fr-common:OwnersNetProfitAttributableToParent contextRef="dur_20140101_20140331_A" unitRef="CNY" decimals="2">5053890363.64</cn-fr-common:OwnersNetProfitAttributableToParent>
+  <csrc-pfs:MajorFinancialIndicators_WeightedAverageReturnOnEquity contextRef="dur_20140101_20140331_A" unitRef="Pure" decimals="4">0.1654</csrc-pfs:MajorFinancialIndicators_WeightedAverageReturnOnEquity>
+  <csrc-pfs:MajorAccountingData_NetProfitNetNon-recurringGainsLossesAttributableToShareholdersListedCompany contextRef="dur_20140101_20140331_A" unitRef="CNY" decimals="2">5065528977.37</csrc-pfs:MajorAccountingData_NetProfitNetNon-recurringGainsLossesAttributableToShareholdersListedCompany>
+  <cn-fr-common:NetCashFlowsFromOperatingActivities contextRef="dur_20140101_20140331_A" unitRef="CNY" decimals="2">60097002142.83</cn-fr-common:NetCashFlowsFromOperatingActivities>
+  <cn-fr-common:TotalProfit contextRef="dur_20140101_20140331_A" unitRef="CNY" decimals="2">6696890363.64</cn-fr-common:TotalProfit>
+  <cn-fr-common:DilutedEarningsPerShare contextRef="dur_20140101_20140331_A" unitRef="EPS" decimals="INF">0.37</cn-fr-common:DilutedEarningsPerShare>
+  <cn-fr-common:OperatingIncome contextRef="dur_20140101_20140331_A" unitRef="CNY" decimals="2">16100272083.2</cn-fr-common:OperatingIncome>
+  <cn-fr-common:Assets contextRef="ins_20150101_A" unitRef="CNY" decimals="2">2186458859355.5</cn-fr-common:Assets>
+  <cn-fr-common:LossesFromDisposalNon-currentAssets contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">1795548.98</cn-fr-common:LossesFromDisposalNon-currentAssets>
+  <cn-fr-common:LossesFromDisposalNon-currentAssets contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">1054028.01</cn-fr-common:LossesFromDisposalNon-currentAssets>
+  <cn-fr-common:AdministrativeExpenses contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">6901260613.07</cn-fr-common:AdministrativeExpenses>
+  <cn-fr-common:AdministrativeExpenses contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">6061839139.18</cn-fr-common:AdministrativeExpenses>
+  <cn-fr-common:OwnersNetProfitAttributableToParent contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">5628858973.67</cn-fr-common:OwnersNetProfitAttributableToParent>
+  <cn-fr-common:OwnersNetProfitAttributableToParent contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">5053890363.64</cn-fr-common:OwnersNetProfitAttributableToParent>
+  <cn-fr-common:IncomeFromChangesInFairValue contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">-58360702.87</cn-fr-common:IncomeFromChangesInFairValue>
+  <cn-fr-common:IncomeFromChangesInFairValue contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">58466131.18</cn-fr-common:IncomeFromChangesInFairValue>
+  <cn-fr-common:ForeignExchangeGains contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">-297582399.05</cn-fr-common:ForeignExchangeGains>
+  <cn-fr-common:ForeignExchangeGains contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">-37227338.99</cn-fr-common:ForeignExchangeGains>
+  <cn-fr-common:BasicEarningsPerShare contextRef="dur_20150101_20150331_C" unitRef="EPS" decimals="INF">0.41</cn-fr-common:BasicEarningsPerShare>
+  <cn-fr-common:BasicEarningsPerShare contextRef="dur_20140101_20140331_C" unitRef="EPS" decimals="INF">0.37</cn-fr-common:BasicEarningsPerShare>
+  <cn-fr-common:TotalProfit contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">7436858973.67</cn-fr-common:TotalProfit>
+  <cn-fr-common:TotalProfit contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">6696890363.64</cn-fr-common:TotalProfit>
+  <cn-fr-common:InterestIncome contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">32463616396.83</cn-fr-common:InterestIncome>
+  <cn-fr-common:InterestIncome contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">27903533665.2</cn-fr-common:InterestIncome>
+  <cn-fr-common:InterestExpenses contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">17319641633.42</cn-fr-common:InterestExpenses>
+  <cn-fr-common:InterestExpenses contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">16354473138.71</cn-fr-common:InterestExpenses>
+  <cn-fr-common:ComprehensiveIncomeAttributableToOwnersOfParent contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">5754786672.85</cn-fr-common:ComprehensiveIncomeAttributableToOwnersOfParent>
+  <cn-fr-common:ComprehensiveIncomeAttributableToOwnersOfParent contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">5218991994.33</cn-fr-common:ComprehensiveIncomeAttributableToOwnersOfParent>
+  <cn-fr-common:OtherComprehensiveIncome_NetOfTax contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">125927699.18</cn-fr-common:OtherComprehensiveIncome_NetOfTax>
+  <cn-fr-common:OtherComprehensiveIncome_NetOfTax contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">165101630.69</cn-fr-common:OtherComprehensiveIncome_NetOfTax>
+  <cn-fr-common:IncomeTaxExpenses contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">1808000000</cn-fr-common:IncomeTaxExpenses>
+  <cn-fr-common:IncomeTaxExpenses contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">1643000000</cn-fr-common:IncomeTaxExpenses>
+  <cn-fr-common:NetProfit contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">5628858973.67</cn-fr-common:NetProfit>
+  <cn-fr-common:NetProfit contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">5053890363.64</cn-fr-common:NetProfit>
+  <cn-fr-common:HandlingChargesCommissionIncome contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">5967224584.19</cn-fr-common:HandlingChargesCommissionIncome>
+  <cn-fr-common:HandlingChargesCommissionIncome contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">3878937314.67</cn-fr-common:HandlingChargesCommissionIncome>
+  <cn-fr-common:HandlingChargesCommissionExpenses contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">579900344.95</cn-fr-common:HandlingChargesCommissionExpenses>
+  <cn-fr-common:HandlingChargesCommissionExpenses contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">671663795.44</cn-fr-common:HandlingChargesCommissionExpenses>
+  <cn-fr-common:InvestmentIncome contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">463819545.5</cn-fr-common:InvestmentIncome>
+  <cn-fr-common:InvestmentIncome contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">1279280327.88</cn-fr-common:InvestmentIncome>
+  <cn-fr-common:DilutedEarningsPerShare contextRef="dur_20150101_20150331_C" unitRef="EPS" decimals="INF">0.41</cn-fr-common:DilutedEarningsPerShare>
+  <cn-fr-common:DilutedEarningsPerShare contextRef="dur_20140101_20140331_C" unitRef="EPS" decimals="INF">0.37</cn-fr-common:DilutedEarningsPerShare>
+  <cn-fr-common:OperatingCost contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">8473151314.55</cn-fr-common:OperatingCost>
+  <cn-fr-common:OperatingCost contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">7321188162.67</cn-fr-common:OperatingCost>
+  <cn-fr-common:OperatingProfit contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">7446594236.84</cn-fr-common:OperatingProfit>
+  <cn-fr-common:OperatingProfit contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">6712311873.82</cn-fr-common:OperatingProfit>
+  <cn-fr-common:BusinessTaxesSurcharges contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">1571890701.48</cn-fr-common:BusinessTaxesSurcharges>
+  <cn-fr-common:BusinessTaxesSurcharges contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">1259349023.49</cn-fr-common:BusinessTaxesSurcharges>
+  <cn-fr-common:OperatingIncome contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">20670995263.11</cn-fr-common:OperatingIncome>
+  <cn-fr-common:OperatingIncome contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">16100272083.2</cn-fr-common:OperatingIncome>
+  <cn-fr-common:Non-operatingIncome contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">2724256.42</cn-fr-common:Non-operatingIncome>
+  <cn-fr-common:Non-operatingIncome contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">3084219.4</cn-fr-common:Non-operatingIncome>
+  <cn-fr-common:Non-operatingExpenses contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">12459519.59</cn-fr-common:Non-operatingExpenses>
+  <cn-fr-common:Non-operatingExpenses contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">18505729.58</cn-fr-common:Non-operatingExpenses>
+  <cn-fr-common:TotalOperatingCost contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">31123943004.64</cn-fr-common:TotalOperatingCost>
+  <cn-fr-common:TotalOperatingCost contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">26414097143.53</cn-fr-common:TotalOperatingCost>
+  <cn-fr-common:TotalOperatingIncome contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">38462660797.9</cn-fr-common:TotalOperatingIncome>
+  <cn-fr-common:TotalOperatingIncome contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">31825889897.28</cn-fr-common:TotalOperatingIncome>
+  <cn-fr-common:AssetsDepreciationLoss contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">4751249711.72</cn-fr-common:AssetsDepreciationLoss>
+  <cn-fr-common:AssetsDepreciationLoss contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">2066772046.71</cn-fr-common:AssetsDepreciationLoss>
+  <cn-fr-common:ComprehensiveIncome contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">5754786672.85</cn-fr-common:ComprehensiveIncome>
+  <cn-fr-common:ComprehensiveIncome contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">5218991994.33</cn-fr-common:ComprehensiveIncome>
+  <cn-fr-common:OtherComprehensiveIncome contextRef="ins_20150101_C" unitRef="CNY" decimals="2">-1850454810.98</cn-fr-common:OtherComprehensiveIncome>
+  <cn-fr-common:OtherComprehensiveIncome contextRef="ins_20150331_C" unitRef="CNY" decimals="2">-1724527111.8</cn-fr-common:OtherComprehensiveIncome>
+  <cn-fr-common:NetIncreaseInDepositsWithCentralBankOtherFinancialInstitutions contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">57736005588.57</cn-fr-common:NetIncreaseInDepositsWithCentralBankOtherFinancialInstitutions>
+  <cn-fr-common:CashRepaymentsAmountsBorrowed contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">20050000000</cn-fr-common:CashRepaymentsAmountsBorrowed>
+  <cn-fr-common:NetCashFlowsFromFinancingActivities contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">35055011210</cn-fr-common:NetCashFlowsFromFinancingActivities>
+  <cn-fr-common:NetCashFlowsFromFinancingActivities contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">9000000000</cn-fr-common:NetCashFlowsFromFinancingActivities>
+  <cn-fr-common:CashOutflowsFromFinancingActivities contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">20662000000</cn-fr-common:CashOutflowsFromFinancingActivities>
+  <cn-fr-common:CashOutflowsFromFinancingActivities contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">0</cn-fr-common:CashOutflowsFromFinancingActivities>
+  <cn-fr-common:CashInflowsFromFinancingActivities contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">55717011210</cn-fr-common:CashInflowsFromFinancingActivities>
+  <cn-fr-common:CashInflowsFromFinancingActivities contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">9000000000</cn-fr-common:CashInflowsFromFinancingActivities>
+  <cn-fr-common:InvestmentIncomeReceived contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">6842916278.35</cn-fr-common:InvestmentIncomeReceived>
+  <cn-fr-common:InvestmentIncomeReceived contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">6053323235.31</cn-fr-common:InvestmentIncomeReceived>
+  <cn-fr-common:CashPaidForDividendProfitDistributionOrInterestPayment contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">612000000</cn-fr-common:CashPaidForDividendProfitDistributionOrInterestPayment>
+  <cn-fr-common:CashReceivedFromBondIssue contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">55717011210</cn-fr-common:CashReceivedFromBondIssue>
+  <cn-fr-common:CashReceivedFromBondIssue contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">9000000000</cn-fr-common:CashReceivedFromBondIssue>
+  <cn-fr-common:CashPaidForPurchaseConstructionFixedAssetsIntangibleAssetsOtherLong-termAssets contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">1251453067.05</cn-fr-common:CashPaidForPurchaseConstructionFixedAssetsIntangibleAssetsOtherLong-termAssets>
+  <cn-fr-common:CashPaidForPurchaseConstructionFixedAssetsIntangibleAssetsOtherLong-termAssets contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">1230659474.51</cn-fr-common:CashPaidForPurchaseConstructionFixedAssetsIntangibleAssetsOtherLong-termAssets>
+  <cn-fr-common:ForeignExchangeRateFluctuationConsequencesOnCashCashEquivalents contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">-197020001.75</cn-fr-common:ForeignExchangeRateFluctuationConsequencesOnCashCashEquivalents>
+  <cn-fr-common:ForeignExchangeRateFluctuationConsequencesOnCashCashEquivalents contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">766665442.69</cn-fr-common:ForeignExchangeRateFluctuationConsequencesOnCashCashEquivalents>
+  <cn-fr-common:OtherCashReceivedConcerningOperatingActivities contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">57389113751.06</cn-fr-common:OtherCashReceivedConcerningOperatingActivities>
+  <cn-fr-common:OtherCashReceivedConcerningOperatingActivities contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">1669101879.61</cn-fr-common:OtherCashReceivedConcerningOperatingActivities>
+  <cn-fr-common:CashOutflowsFromOperatingActivities contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">155596833018.88</cn-fr-common:CashOutflowsFromOperatingActivities>
+  <cn-fr-common:CashOutflowsFromOperatingActivities contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">181971877531.48</cn-fr-common:CashOutflowsFromOperatingActivities>
+  <cn-fr-common:CashInflowsFromOperatingActivities contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">167091407889.87</cn-fr-common:CashInflowsFromOperatingActivities>
+  <cn-fr-common:CashInflowsFromOperatingActivities contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">242068879674.31</cn-fr-common:CashInflowsFromOperatingActivities>
+  <cn-fr-common:NetIncreaseInCustomerBankDepositsDueToBanksOtherFinancialInstitutions contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">77043026829.76</cn-fr-common:NetIncreaseInCustomerBankDepositsDueToBanksOtherFinancialInstitutions>
+  <cn-fr-common:NetIncreaseInCustomerBankDepositsDueToBanksOtherFinancialInstitutions contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">215591358761.6</cn-fr-common:NetIncreaseInCustomerBankDepositsDueToBanksOtherFinancialInstitutions>
+  <cn-fr-common:NetIncreaseInLoansAdvancesToCustomers contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">102499518335.97</cn-fr-common:NetIncreaseInLoansAdvancesToCustomers>
+  <cn-fr-common:NetIncreaseInLoansAdvancesToCustomers contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">44288369427.38</cn-fr-common:NetIncreaseInLoansAdvancesToCustomers>
+  <cn-fr-common:BalanceCashCashEquivalents contextRef="ins_20150101_C" unitRef="CNY" decimals="2">183456397374.08</cn-fr-common:BalanceCashCashEquivalents>
+  <cn-fr-common:BalanceCashCashEquivalents contextRef="ins_20140101_C" unitRef="CNY" decimals="2">181104090754.91</cn-fr-common:BalanceCashCashEquivalents>
+  <cn-fr-common:BalanceCashCashEquivalents contextRef="ins_20150331_C" unitRef="CNY" decimals="2">207038279326.95</cn-fr-common:BalanceCashCashEquivalents>
+  <cn-fr-common:BalanceCashCashEquivalents contextRef="ins_20140331_C" unitRef="CNY" decimals="2">259026125611.89</cn-fr-common:BalanceCashCashEquivalents>
+  <cn-fr-common:InterestHandlingChargesCommissionReceived contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">31340975933.88</cn-fr-common:InterestHandlingChargesCommissionReceived>
+  <cn-fr-common:InterestHandlingChargesCommissionReceived contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">24808419033.1</cn-fr-common:InterestHandlingChargesCommissionReceived>
+  <cn-fr-common:CashReceivedFromDisposalInvestments contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">122184725969.31</cn-fr-common:CashReceivedFromDisposalInvestments>
+  <cn-fr-common:CashReceivedFromDisposalInvestments contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">112591129216.83</cn-fr-common:CashReceivedFromDisposalInvestments>
+  <cn-fr-common:NetCashFlowsFromInvestingActivities contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">-22770684126.37</cn-fr-common:NetCashFlowsFromInvestingActivities>
+  <cn-fr-common:NetCashFlowsFromInvestingActivities contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">8058367271.46</cn-fr-common:NetCashFlowsFromInvestingActivities>
+  <cn-fr-common:CashOutflowsFromInvestingActivities contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">151798326374.03</cn-fr-common:CashOutflowsFromInvestingActivities>
+  <cn-fr-common:CashOutflowsFromInvestingActivities contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">110586085180.68</cn-fr-common:CashOutflowsFromInvestingActivities>
+  <cn-fr-common:CashInflowsFromInvestingActivities contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">129027642247.66</cn-fr-common:CashInflowsFromInvestingActivities>
+  <cn-fr-common:CashInflowsFromInvestingActivities contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">118644452452.14</cn-fr-common:CashInflowsFromInvestingActivities>
+  <cn-fr-common:CashPaidForAcquisitionInvestments contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">150546873306.98</cn-fr-common:CashPaidForAcquisitionInvestments>
+  <cn-fr-common:CashPaidForAcquisitionInvestments contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">109355425706.17</cn-fr-common:CashPaidForAcquisitionInvestments>
+  <cn-fr-common:NetIncreaseInCashCashEquivalents contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">23581881952.87</cn-fr-common:NetIncreaseInCashCashEquivalents>
+  <cn-fr-common:NetIncreaseInCashCashEquivalents contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">77922034856.98</cn-fr-common:NetIncreaseInCashCashEquivalents>
+  <cn-fr-common:NetIncreaseInBorrowingsFromCentralBank contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">1318291375.17</cn-fr-common:NetIncreaseInBorrowingsFromCentralBank>
+  <cn-fr-common:NetCashFlowsFromOperatingActivities contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">11494574870.99</cn-fr-common:NetCashFlowsFromOperatingActivities>
+  <cn-fr-common:NetCashFlowsFromOperatingActivities contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">60097002142.83</cn-fr-common:NetCashFlowsFromOperatingActivities>
+  <cn-fr-common:CashPaidForTaxesSurcharges contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">2668843278.54</cn-fr-common:CashPaidForTaxesSurcharges>
+  <cn-fr-common:CashPaidForTaxesSurcharges contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">2278729337.92</cn-fr-common:CashPaidForTaxesSurcharges>
+  <cn-fr-common:InterestHandlingChargesCommissionsPaid contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">17415812523.85</cn-fr-common:InterestHandlingChargesCommissionsPaid>
+  <cn-fr-common:InterestHandlingChargesCommissionsPaid contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">14221959857.43</cn-fr-common:InterestHandlingChargesCommissionsPaid>
+  <cn-fr-common:CashPaidForOtherOperatingActivities contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">27877198626.29</cn-fr-common:CashPaidForOtherOperatingActivities>
+  <cn-fr-common:CashPaidForOtherOperatingActivities contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">58514492048.16</cn-fr-common:CashPaidForOtherOperatingActivities>
+  <cn-fr-common:CashPaidToForEmployees contextRef="dur_20150101_20150331_C" unitRef="CNY" decimals="2">5135460254.23</cn-fr-common:CashPaidToForEmployees>
+  <cn-fr-common:CashPaidToForEmployees contextRef="dur_20140101_20140331_C" unitRef="CNY" decimals="2">4932321272.02</cn-fr-common:CashPaidToForEmployees>
+  <cn-fr-common:LoansToBanksOtherFinancialInstitutions contextRef="ins_20150101_C" unitRef="CNY" decimals="2">45841245706.89</cn-fr-common:LoansToBanksOtherFinancialInstitutions>
+  <cn-fr-common:LoansToBanksOtherFinancialInstitutions contextRef="ins_20150331_C" unitRef="CNY" decimals="2">46360311755.52</cn-fr-common:LoansToBanksOtherFinancialInstitutions>
+  <cn-fr-common:Long-termPrepaidExpenses contextRef="ins_20150101_C" unitRef="CNY" decimals="2">1188300206.27</cn-fr-common:Long-termPrepaidExpenses>
+  <cn-fr-common:Long-termPrepaidExpenses contextRef="ins_20150331_C" unitRef="CNY" decimals="2">1168494912.14</cn-fr-common:Long-termPrepaidExpenses>
+  <cn-fr-common:Long-termEquityInvestment contextRef="ins_20150101_C" unitRef="CNY" decimals="2">485926807.24</cn-fr-common:Long-termEquityInvestment>
+  <cn-fr-common:Long-termEquityInvestment contextRef="ins_20150331_C" unitRef="CNY" decimals="2">485926807.24</cn-fr-common:Long-termEquityInvestment>
+  <cn-fr-common:PlacementsFromBanksOtherFinancialInstitutions contextRef="ins_20150101_C" unitRef="CNY" decimals="2">13551455859.79</cn-fr-common:PlacementsFromBanksOtherFinancialInstitutions>
+  <cn-fr-common:PlacementsFromBanksOtherFinancialInstitutions contextRef="ins_20150331_C" unitRef="CNY" decimals="2">13733138539.95</cn-fr-common:PlacementsFromBanksOtherFinancialInstitutions>
+  <cn-fr-common:DeferredIncomeTaxAssets contextRef="ins_20150101_C" unitRef="CNY" decimals="2">6833531851.22</cn-fr-common:DeferredIncomeTaxAssets>
+  <cn-fr-common:DeferredIncomeTaxAssets contextRef="ins_20150331_C" unitRef="CNY" decimals="2">7483831270.36</cn-fr-common:DeferredIncomeTaxAssets>
+  <cn-fr-common:LoansAdvancesToCustomers contextRef="ins_20150101_C" unitRef="CNY" decimals="2">1003637074082.06</cn-fr-common:LoansAdvancesToCustomers>
+  <cn-fr-common:LoansAdvancesToCustomers contextRef="ins_20150331_C" unitRef="CNY" decimals="2">1101312741895.31</cn-fr-common:LoansAdvancesToCustomers>
+  <cn-fr-common:Non-currentLiabilities contextRef="ins_20150101_C" unitRef="CNY" decimals="2">50214521948.54</cn-fr-common:Non-currentLiabilities>
+  <cn-fr-common:Non-currentLiabilities contextRef="ins_20150331_C" unitRef="CNY" decimals="2">87900143127.97</cn-fr-common:Non-currentLiabilities>
+  <cn-fr-common:Non-currentAssets contextRef="ins_20150101_C" unitRef="CNY" decimals="2">1535952691315.13</cn-fr-common:Non-currentAssets>
+  <cn-fr-common:Non-currentAssets contextRef="ins_20150331_C" unitRef="CNY" decimals="2">1673506974289.16</cn-fr-common:Non-currentAssets>
+  <cn-fr-common:LiabilitiesOwnersEquity contextRef="ins_20150101_C" unitRef="CNY" decimals="2">2186458859355.5</cn-fr-common:LiabilitiesOwnersEquity>
+  <cn-fr-common:LiabilitiesOwnersEquity contextRef="ins_20150331_C" unitRef="CNY" decimals="2">2304774565818.66</cn-fr-common:LiabilitiesOwnersEquity>
+  <cn-fr-common:Liabilities contextRef="ins_20150101_C" unitRef="CNY" decimals="2">2055509901573.18</cn-fr-common:Liabilities>
+  <cn-fr-common:Liabilities contextRef="ins_20150331_C" unitRef="CNY" decimals="2">2168070821363.48</cn-fr-common:Liabilities>
+  <cn-fr-common:Paid-upCapital contextRef="ins_20150101_C" unitRef="CNY" decimals="2">11424894787</cn-fr-common:Paid-upCapital>
+  <cn-fr-common:Paid-upCapital contextRef="ins_20150331_C" unitRef="CNY" decimals="2">11424894787</cn-fr-common:Paid-upCapital>
+  <cn-fr-common:OwnersEquity contextRef="ins_20150101_C" unitRef="CNY" decimals="2">130948957782.32</cn-fr-common:OwnersEquity>
+  <cn-fr-common:OwnersEquity contextRef="ins_20150331_C" unitRef="CNY" decimals="2">136703744455.18</cn-fr-common:OwnersEquity>
+  <cn-fr-common:FixedAssets contextRef="ins_20150101_C" unitRef="CNY" decimals="2">3811572611.18</cn-fr-common:FixedAssets>
+  <cn-fr-common:FixedAssets contextRef="ins_20150331_C" unitRef="CNY" decimals="2">3696692221.33</cn-fr-common:FixedAssets>
+  <cn-fr-common:OwnersEquityAttributableToParent contextRef="ins_20150101_C" unitRef="CNY" decimals="2">130948957782.32</cn-fr-common:OwnersEquityAttributableToParent>
+  <cn-fr-common:OwnersEquityAttributableToParent contextRef="ins_20150331_C" unitRef="CNY" decimals="2">136703744455.18</cn-fr-common:OwnersEquityAttributableToParent>
+  <cn-fr-common:MonetaryCapital contextRef="ins_20150101_C" unitRef="CNY" decimals="2">306298440514.8</cn-fr-common:MonetaryCapital>
+  <cn-fr-common:MonetaryCapital contextRef="ins_20150331_C" unitRef="CNY" decimals="2">266704933850.29</cn-fr-common:MonetaryCapital>
+  <cn-fr-common:BalancesWithClearingCompanies contextRef="ins_20150101_C" unitRef="CNY" decimals="2">66969096519.07</cn-fr-common:BalancesWithClearingCompanies>
+  <cn-fr-common:BalancesWithClearingCompanies contextRef="ins_20150331_C" unitRef="CNY" decimals="2">67567544323.1</cn-fr-common:BalancesWithClearingCompanies>
+  <cn-fr-common:Held-for-tradingFinancialLiabilities contextRef="ins_20150101_C" unitRef="CNY" decimals="2">4258924180</cn-fr-common:Held-for-tradingFinancialLiabilities>
+  <cn-fr-common:Held-for-tradingFinancialLiabilities contextRef="ins_20150331_C" unitRef="CNY" decimals="2">4888604700</cn-fr-common:Held-for-tradingFinancialLiabilities>
+  <cn-fr-common:Held-for-tradingFinancialAssets contextRef="ins_20150101_C" unitRef="CNY" decimals="2">25811154907.64</cn-fr-common:Held-for-tradingFinancialAssets>
+  <cn-fr-common:Held-for-tradingFinancialAssets contextRef="ins_20150331_C" unitRef="CNY" decimals="2">40789889582</cn-fr-common:Held-for-tradingFinancialAssets>
+  <cn-fr-common:Available-for-saleFinancialAssets contextRef="ins_20150101_C" unitRef="CNY" decimals="2">1493322786.17</cn-fr-common:Available-for-saleFinancialAssets>
+  <cn-fr-common:Available-for-saleFinancialAssets contextRef="ins_20150331_C" unitRef="CNY" decimals="2">1954231865.78</cn-fr-common:Available-for-saleFinancialAssets>
+  <cn-fr-common:CurrentLiabilities contextRef="ins_20150101_C" unitRef="CNY" decimals="2">2005295379624.64</cn-fr-common:CurrentLiabilities>
+  <cn-fr-common:CurrentLiabilities contextRef="ins_20150331_C" unitRef="CNY" decimals="2">2080170678235.51</cn-fr-common:CurrentLiabilities>
+  <cn-fr-common:CurrentAssets contextRef="ins_20150101_C" unitRef="CNY" decimals="2">650506168040.37</cn-fr-common:CurrentAssets>
+  <cn-fr-common:CurrentAssets contextRef="ins_20150331_C" unitRef="CNY" decimals="2">631267591529.5</cn-fr-common:CurrentAssets>
+  <cn-fr-common:AssetsSoldUnderAgreementsToRepurchase contextRef="ins_20150101_C" unitRef="CNY" decimals="2">22568412500</cn-fr-common:AssetsSoldUnderAgreementsToRepurchase>
+  <cn-fr-common:AssetsSoldUnderAgreementsToRepurchase contextRef="ins_20150331_C" unitRef="CNY" decimals="2">18425500000</cn-fr-common:AssetsSoldUnderAgreementsToRepurchase>
+  <cn-fr-common:FinancialAssetsPurchasedUnderAgreementsToResell contextRef="ins_20150101_C" unitRef="CNY" decimals="2">178635912218.62</cn-fr-common:FinancialAssetsPurchasedUnderAgreementsToResell>
+  <cn-fr-common:FinancialAssetsPurchasedUnderAgreementsToResell contextRef="ins_20150331_C" unitRef="CNY" decimals="2">183048066154.26</cn-fr-common:FinancialAssetsPurchasedUnderAgreementsToResell>
+  <cn-fr-common:OtherNon-currentLiabilities contextRef="ins_20150101_C" unitRef="CNY" decimals="2">8439340413.16</cn-fr-common:OtherNon-currentLiabilities>
+  <cn-fr-common:OtherNon-currentLiabilities contextRef="ins_20150331_C" unitRef="CNY" decimals="2">9953960626.12</cn-fr-common:OtherNon-currentLiabilities>
+  <cn-fr-common:OtherNon-currentAssets contextRef="ins_20150101_C" unitRef="CNY" decimals="2">294864656553.18</cn-fr-common:OtherNon-currentAssets>
+  <cn-fr-common:OtherNon-currentAssets contextRef="ins_20150331_C" unitRef="CNY" decimals="2">310683867929.03</cn-fr-common:OtherNon-currentAssets>
+  <cn-fr-common:Goodwill contextRef="ins_20150101_C" unitRef="CNY" decimals="2">7568304912.88</cn-fr-common:Goodwill>
+  <cn-fr-common:Goodwill contextRef="ins_20150331_C" unitRef="CNY" decimals="2">7568304912.88</cn-fr-common:Goodwill>
+  <cn-fr-common:InvestmentProperties contextRef="ins_20150101_C" unitRef="CNY" decimals="2">110237000.37</cn-fr-common:InvestmentProperties>
+  <cn-fr-common:InvestmentProperties contextRef="ins_20150331_C" unitRef="CNY" decimals="2">108537912.57</cn-fr-common:InvestmentProperties>
+  <cn-fr-common:RetainedProfits contextRef="ins_20150101_C" unitRef="CNY" decimals="2">43655653157.19</cn-fr-common:RetainedProfits>
+  <cn-fr-common:RetainedProfits contextRef="ins_20150331_C" unitRef="CNY" decimals="2">49284512130.87</cn-fr-common:RetainedProfits>
+  <cn-fr-common:IntangibleAssets contextRef="ins_20150101_C" unitRef="CNY" decimals="2">5292726175.52</cn-fr-common:IntangibleAssets>
+  <cn-fr-common:IntangibleAssets contextRef="ins_20150331_C" unitRef="CNY" decimals="2">5156858236.44</cn-fr-common:IntangibleAssets>
+  <cn-fr-common:CustomerBankDepositsDueToBanksOtherFinancialInstitutions contextRef="ins_20150101_C" unitRef="CNY" decimals="2">1918633801909.2</cn-fr-common:CustomerBankDepositsDueToBanksOtherFinancialInstitutions>
+  <cn-fr-common:CustomerBankDepositsDueToBanksOtherFinancialInstitutions contextRef="ins_20150331_C" unitRef="CNY" decimals="2">1996015826028.85</cn-fr-common:CustomerBankDepositsDueToBanksOtherFinancialInstitutions>
+  <cn-fr-common:BorrowingsFromCentralBank contextRef="ins_20150101_C" unitRef="CNY" decimals="2">2753761148.48</cn-fr-common:BorrowingsFromCentralBank>
+  <cn-fr-common:BorrowingsFromCentralBank contextRef="ins_20150331_C" unitRef="CNY" decimals="2">4085595978.4</cn-fr-common:BorrowingsFromCentralBank>
+  <cn-fr-common:GeneralRiskProvisions contextRef="ins_20150101_C" unitRef="CNY" decimals="2">19115040662.5</cn-fr-common:GeneralRiskProvisions>
+  <cn-fr-common:GeneralRiskProvisions contextRef="ins_20150331_C" unitRef="CNY" decimals="2">19115040662.5</cn-fr-common:GeneralRiskProvisions>
+  <cn-fr-common:Prepayments contextRef="ins_20150101_C" unitRef="CNY" decimals="2">788507881.03</cn-fr-common:Prepayments>
+  <cn-fr-common:Prepayments contextRef="ins_20150331_C" unitRef="CNY" decimals="2">792962853.75</cn-fr-common:Prepayments>
+  <cn-fr-common:InterestPayable contextRef="ins_20150101_C" unitRef="CNY" decimals="2">25229254669.8</cn-fr-common:InterestPayable>
+  <cn-fr-common:InterestPayable contextRef="ins_20150331_C" unitRef="CNY" decimals="2">24241431099.57</cn-fr-common:InterestPayable>
+  <cn-fr-common:StaffRemunerationPayables contextRef="ins_20150101_C" unitRef="CNY" decimals="2">7961188344.04</cn-fr-common:StaffRemunerationPayables>
+  <cn-fr-common:StaffRemunerationPayables contextRef="ins_20150331_C" unitRef="CNY" decimals="2">6584011281.76</cn-fr-common:StaffRemunerationPayables>
+  <cn-fr-common:AccountsPayable contextRef="ins_20150101_C" unitRef="CNY" decimals="2">1882839282.56</cn-fr-common:AccountsPayable>
+  <cn-fr-common:AccountsPayable contextRef="ins_20150331_C" unitRef="CNY" decimals="2">1448001754.16</cn-fr-common:AccountsPayable>
+  <cn-fr-common:BondsPayable contextRef="ins_20150101_C" unitRef="CNY" decimals="2">41750176813.99</cn-fr-common:BondsPayable>
+  <cn-fr-common:BondsPayable contextRef="ins_20150331_C" unitRef="CNY" decimals="2">77921351540.75</cn-fr-common:BondsPayable>
+  <cn-fr-common:EstimatedLiabilities contextRef="ins_20150101_C" unitRef="CNY" decimals="2">25004721.39</cn-fr-common:EstimatedLiabilities>
+  <cn-fr-common:EstimatedLiabilities contextRef="ins_20150331_C" unitRef="CNY" decimals="2">24830961.1</cn-fr-common:EstimatedLiabilities>
+  <cn-fr-common:TaxesPayable contextRef="ins_20150101_C" unitRef="CNY" decimals="2">5793785708.29</cn-fr-common:TaxesPayable>
+  <cn-fr-common:TaxesPayable contextRef="ins_20150331_C" unitRef="CNY" decimals="2">7211994225.7</cn-fr-common:TaxesPayable>
+  <cn-fr-common:InterestReceivable contextRef="ins_20150101_C" unitRef="CNY" decimals="2">11937131170.28</cn-fr-common:InterestReceivable>
+  <cn-fr-common:InterestReceivable contextRef="ins_20150331_C" unitRef="CNY" decimals="2">11632785755.66</cn-fr-common:InterestReceivable>
+  <cn-fr-common:SurplusReserves contextRef="ins_20150101_C" unitRef="CNY" decimals="2">6333719505.65</cn-fr-common:SurplusReserves>
+  <cn-fr-common:SurplusReserves contextRef="ins_20150331_C" unitRef="CNY" decimals="2">6333719505.65</cn-fr-common:SurplusReserves>
+  <cn-fr-common:CapitalReserves contextRef="ins_20150101_C" unitRef="CNY" decimals="2">52270104480.96</cn-fr-common:CapitalReserves>
+  <cn-fr-common:CapitalReserves contextRef="ins_20150331_C" unitRef="CNY" decimals="2">52270104480.96</cn-fr-common:CapitalReserves>
+  <cn-fr-common:Assets contextRef="ins_20150101_C" unitRef="CNY" decimals="2">2186458859355.5</cn-fr-common:Assets>
+  <cn-fr-common:Assets contextRef="ins_20150331_C" unitRef="CNY" decimals="2">2304774565818.66</cn-fr-common:Assets>
+  <cn-fr-common:Held-to-maturityInvestments contextRef="ins_20150101_C" unitRef="CNY" decimals="2">207873579635.38</cn-fr-common:Held-to-maturityInvestments>
+  <cn-fr-common:Held-to-maturityInvestments contextRef="ins_20150331_C" unitRef="CNY" decimals="2">231094027632.42</cn-fr-common:Held-to-maturityInvestments>
+  <cn-fr-common:Under-constructionProjects contextRef="ins_20150101_C" unitRef="CNY" decimals="2">2793458693.66</cn-fr-common:Under-constructionProjects>
+  <cn-fr-common:Under-constructionProjects contextRef="ins_20150331_C" unitRef="CNY" decimals="2">2793458693.66</cn-fr-common:Under-constructionProjects>
+  <cn-fr-common:AccountsReceivable contextRef="ins_20150101_C" unitRef="CNY" decimals="2">9924610757.29</cn-fr-common:AccountsReceivable>
+  <cn-fr-common:AccountsReceivable contextRef="ins_20150331_C" unitRef="CNY" decimals="2">8612855182.02</cn-fr-common:AccountsReceivable>
+</xbrli:xbrl>

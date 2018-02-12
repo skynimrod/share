@@ -1,0 +1,724 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="ie=7" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<title>最新基金公告</title>
+ 
+		<script>var col_id=849</script>
+ 
+		<link rel="stylesheet" type="text/css" href="/css/layout.css;pva05a1f4461748960" />
+<link rel="stylesheet" type="text/css" href="/css/style.css;pvc0a228964bf2df1d" />					
+<link href="/css/main_menu_blue.css;pv16ef1bba6aad8e7d" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/css/s_suggest.css;pv0d46d465faafc2e9" />	
+		<script type="text/javascript" src="/js/common/jquery-1.7.2.min.js;pv77f6d22d31ac6be2"></script>
+<script type="text/javascript" src="/js/1left.js;pv1e17d84b79536c99"></script>
+<script type="text/javascript" src="/js/1mainmenu.js;pv65f3aeb095485aa8"> </script>
+<script type="text/javascript" src="/js/common/jquery-extend-1.0.js;pv9b9f16ac4f90b8a9"></script>
+<script type="text/javascript" src="/js/common/validate.js;pv1dbe6c30207c3202"></script>
+<script type="text/javascript" src="/js/common/DatePicker/WdatePicker.js;pvb65e12c3343a51ff"></script>
+<script type="text/javascript" src="/js/common/s_suggest.js;pve0e88ad84f215c32"></script>
+<script type="text/javascript" src="/js/common/verify_utils.js;pv12b17f0adf8f6fb7"></script>
+<script type="text/javascript" src="/js/common/common.js;pv12fe8589f95ff2dd"></script>
+<script type="text/javascript" src="/js/common/publicRs.js;pv330c5904dbd20445"></script>
+<script type="text/javascript" src="/js/common/systemDate_global.js"></script>
+<!--<script type="text/javascript" src="/js/flgz/sse_date_select.js;pvc2cfecec2723b78f"></script>-->
+<script type="text/javascript" src="/js/zqpz/gp/gplb/hyjs/hyjs.js;pv52b415b38057d8e3"></script>
+<script type="text/javascript" src="/js/zqpz/gp/sjtj/dqhyfl/ahyfl/ahyfl.js;pv3619e68b7e6ad4d0"></script>
+<script type="text/javascript" src="/js/scsj/jysj/cjgk/gp/abghjcjgk/yyplqk.js;pv8ab759266408118c"></script>
+<script type="text/javascript"> 
+          jQuery(document).ready(function(){
+                 var winOnloadFun = window.onload;
+                 window.onload = function(){};
+                 winOnloadFun.apply();
+         });
+</script>
+<script type="text/javascript" src="/js/common/ssesuggestdata.js;pv4ffb1296b9061d16"></script>
+<script type="text/javascript" src="/js/common/ssesuggestEbonddata.js;pvb9609d07c403118d"></script>
+<script type="text/javascript" src="/js/common/ssesuggestfunddata.js;pv5277bbec9271a82a"></script>
+<script type="text/javascript" src="/js/common/ssesuggestTbonddata.js;pva84acbad03f1be80"></script>
+<script type="text/javascript" src="/js/common/ssesuggestdataAll.js;pv6f9621783393466d"></script>
+ 
+<script type="text/javascript" language="javascript"> 
+		
+	function bluring() {
+		if (event.srcElement.tagName == 'A'
+				|| event.srcElement.tagName == 'IMG')
+			document.body.focus();
+	}
+	document.onfocusin = bluring;
+</script>
+<script> 
+var flag= "false";var t= 0;
+if(col_id == '775')
+{
+	mainflash_id = '0101';
+	window.onload = function (){chang();}
+}
+else
+{
+	readtree();
+	window.onload = function (){initTree();chang();}	
+}
+readtree();
+function readtree(arrayName)
+{
+	var arrayName = "LeftMenu";
+	findid(arrayName);
+}
+ 
+function findid(arrayName)
+{
+	  	var category = eval(arrayName);
+ 
+		for(var i=0; i <category.length; i++) {
+		  	var subcolum = category[i][3];
+			var flash = category[i][1];
+			var len = category[i][1].length;
+			var col = category[i][2];
+			var nodisplay = category[i][6];
+		  	if(subcolum == 0){
+		  	}else if (subcolum == 1){ 
+		    	arrayName = "LeftMenu_"+category[i][1];
+		        findid(arrayName);
+			}
+			if(nodisplay != "")
+			{
+			parts = nodisplay.split(",");
+			for( var j=0; j<parts.length;j++)
+			{
+				if(parts[j] == col_id)
+				{
+					flash_id = flash;
+					colmain_id = col;
+					if(flash_id.length == "4")
+					{
+						fcol_id = col;
+						readtree_m();
+					}
+					var f_arrayName = "LeftMenu_"+flash_id.substr(0,2);
+					findid_f(f_arrayName);
+				}	
+				
+			}
+			
+			}
+			if((col_id == col) && (flash != "01"))
+			{
+			  flash_id = flash;	
+			  colmain_id = col;
+                                                  if(flash_id.length == "4")
+	                                 {
+				fcol_id = col;
+				readtree_m();
+			  }
+			  var f_arrayName = "LeftMenu_"+flash_id.substr(0,2);
+			  findid_f(f_arrayName);
+			}
+ 
+		}
+ 
+}
+ 
+function findid_f(f_arrayName)
+{
+		var f = eval(f_arrayName);
+		for (var j=0;j<f.length;j++)
+		{
+			var subcolum_f = f[j][3];
+			if(subcolum_f == 0)
+			{
+		  	}
+			else if (subcolum_f == 1)
+			{ 
+		    	f_arrayName = "LeftMenu_"+f[j][1];
+		        findid_f(f_arrayName);
+			}
+			for (var k=1;k<flash_id.length/2-1;k++)
+			{
+					if((f[j][1] == flash_id.substr(0,flash_id.length - 2 * k)))
+						
+						{
+							fcol_id = f[j][2];
+							readtree_m();
+						}
+						
+				
+				}
+		}
+		
+}
+function readtree_m(arrayName_m)
+{
+	var arrayName_m = "MainMenu";
+	findid_m(arrayName_m);
+}
+function findid_m(arrayName_m)
+{
+	var tree_m = eval(arrayName_m);
+	for(var i=0; i <tree_m.length; i++)
+	 {
+		var subcolum_m = tree_m[i][3];
+		var flash_m = tree_m[i][1];
+		var len_m = tree_m[i][1].length;
+		var col_m = tree_m[i][2];
+		
+		if(subcolum_m == 0)
+		{
+		}
+		else if (subcolum_m == 1)
+		{ 
+			arrayName_m = "MainMenu_"+tree_m[i][1];
+			findid_m(arrayName_m);
+			
+		}
+		if((colmain_id == col_m) && (flash_m != "01"))
+		{
+			mainflash_id = flash_m;
+			flag = "true";
+		}
+		if(flag == "false")
+		{
+			var aa = "false";
+			if((fcol_id == col_m) && (flash_m != "01"))
+			{
+ 
+				t = t + 1;
+				if(t == 1)
+				{
+					
+					mainflash_id = flash_m;
+				}
+				
+			}
+ 
+ 
+		}
+		
+	}
+	
+}
+</script>
+	</head>
+ 
+	<body>
+		<table id="container" align="center" cellspacing= "0" cellpadding= "0"  border="0" bgcolor="#fff">
+			<tr class="targetTR">
+				<td id="left_shadow">&nbsp;</td>
+				<td height="100%" valign="top" style="vertical-align:top;"><!-- id="siteFrame" -->
+					<table height="100%" class="wrap">
+						<tr height="210" class="targetTR">
+							<td valign="top" style="height:auto;">
+								<div id="head"><!-- 页头开始  -->
+									<script language="javascript"> 
+	function doSubmitfooter1() {
+		if (document.frmfooter1.KeyWord.value == '' || document.frmfooter1.KeyWord.value == '输入关键字,查网站内容') {
+			alert("请输入完整检索条件后进行检索");
+			document.frmfooter1.KeyWord.focus();
+			return false;
+		} else
+			return true;
+	}
+</script>
+<script language="javascript"> 
+	function doSubmitfrm51n1() {
+		with (document.frmcheck) {
+			if (DateDeclare.value == "") {
+				alert("请选择查询公告日期");
+				return false;
+			}
+			if (!isChkDateAll(DateDeclare.value, ""))
+				return false;
+		}
+		return true;
+	}
+</script>
+<script language="javascript"> 
+	function calDateDeclareb() {
+		with (document.frm5_2_1_2_j41) {
+			if (isEmpty(InputCond.value)) {
+				alert("请输入查询的证券代码或简称");
+				return false;
+			}
+			return true;
+		}
+	}
+</script>
+<script language="javascript"> 
+	function initHistoricalQueryDate() {
+		var endDate = new Date();
+		var beginDate = adjustDateOfSpecifiedDate(endDate, -7);
+		document.forms.frm5_2_1_2_j4.DateDeclareStart.value = dateToString(beginDate);
+		document.forms.frm5_2_1_2_j4.DateDeclareEnd.value = dateToString(endDate);
+	}
+</script>
+<script language="javascript"> 
+	function calDateDeclare1() {
+		with (document.frm5_2_1_2_j4) {
+			if (!isEmpty(DateDeclareStart.value)) {
+				if (!isDate(DateDeclareStart.value)) {
+					alert("请选择正确时间");
+					return false;
+				}
+			}
+			if (!isEmpty(DateDeclareEnd.value)) {
+				if (!isDate(DateDeclareEnd.value)) {
+					alert("请选择正确时间");
+					return false;
+				}
+				if (!isChkDateAll(DateDeclareStart.value, DateDeclareEnd.value))
+					return false;
+			}
+			if (isEmpty(InputCond.value)) {
+				alert("请输入查询的证券代码或简称");
+				return false;
+			}
+			return true;
+		}
+	}
+</script>
+<div class="top_logo">
+    <a href="http://www.sse.com.cn"><img width="300" height="110" src="/images/blankimage.gif;pv36aad1bee098e12d"/></a>
+</div><!--头部logo -->
+<div class="headbox_right">
+    <ul class="headbox_right_top">
+        <li><a href="http://www.sse.com.cn">首页</a> |</li>
+        <li><a href="/marketservices/servicesupport/websuport/map/">网站地图</a> |</li>
+        <li><a href="/marketservices/servicesupport/questions/business/trading/">常见问题</a> |</li>
+        <li><a href="/aboutus/contactus/">联系我们</a></li>
+        <li><a class="right_en" target="_blank" href="http://english.sse.com.cn"></a></li>
+    </ul><div class="clear"></div>
+    <script type="text/javascript">
+		var homevalidate = function(val) {
+			if (val == "输入证券代码,查公告") {
+				val = "";
+			}
+			if (jQuery.trim(val).length == 0) {
+				alert("请输入查询关键词 关键字可为 : 证券代码");
+				return false;
+			}
+			if(isNaN(val)){
+				alert("证券代码必须为数字");
+				return false;
+			}
+			if (val.length < 6 || val.length > 6) {
+				alert("证券代码必须是6位数字");
+				return false;
+			}
+			var pattern = new RegExp("[`~!@%#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？]")
+			if (pattern.test(val)) {
+				alert("请输入正确的查询条件.");
+				return false;
+			}
+			return true;
+		};
+		var searchBulletin = function() {
+			var code = document.getElementById("searchtop").value;
+			if (!homevalidate(code)) {
+				return;
+			}
+			var flag = utils.checkSecurityCode(code);
+			if(flag===0||flag===1){
+				window.open("/assortment/stock/list/stockdetails/announcement/index.shtml?COMPANY_CODE=" + code + "" + "&static=t");
+			}else if(flag===2){
+				window.open("/disclosure/bond/tbondissue/tbond_index_n.shtml?productId="+code+"&reportType=qbgg&beginDate="+ utils.changeDateByMonth(utils.dateFormatterToString(new Date()),-12)+"&endDate="+utils.dateFormatterToString(new Date())+"&moreConditions=false");
+			}else if(flag===3){
+				window.open("/disclosure/bond/corporate/corporate_index_n.shtml?productId="+code+"&reportType=qbgg&beginDate="+ utils.changeDateByMonth(utils.dateFormatterToString(new Date()),-12)+"&endDate="+utils.dateFormatterToString(new Date())+"&moreConditions=false");
+			}else if(flag===4){
+				window.open("/disclosure/fund/announcement/fund_index_n.shtml?reportType2=全部&productId="+code+"&beginDate="+utils.changeDateByMonth(utils.dateFormatterToString(new Date()),-12)+"&endDate="+utils.dateFormatterToString(new Date())+"&reportType=&moreConditions=false");
+			}
+		};
+		var searchMarket = function() {
+			var code = document.getElementById("searchtop").value;
+			if (!homevalidate(code)) {
+				return;
+			}
+			window.open("/assortment/stock/list/stockdetails/price/index.shtml?COMPANY_CODE=" + code + "" + "");
+		};
+		var searchNewTips = function() {
+			var keywords = jQuery("#searchWholeSite").val();
+			if (keywords == "输入关键字,查网站内容") {
+				keywords = "";
+			}
+			if (jQuery.trim(keywords).length == 0) {
+				alert("请输入查询关键词. ");
+				return false;
+			}
+			window.open("/marketservices/servicesupport/websuport/search_result.shtml?keywords=" + keywords);
+		};
+    </script>
+	
+    <!--顶部右上角链接 -->
+    <div class="headbox_right_bottom">
+        <input class="searchtop" type="text" style="height: 14px;" onfocus="if(this.value=='输入证券代码,查公告'){this.value='';}"
+        onblur="clearSuggest();if(this.value==''){this.value='输入证券代码,查公告';}" onkeypress="utils.keypress2TriggerClickEvent(event,'bulletinsearchingBtn')"
+        onkeydown="return tabfix(this.value,event,this);" onkeyup="suggest(this.value,event,this,'all');" id="searchtop" maxlength="50" size="21" value="输入证券代码,查公告" name="keyword"/>
+        <a href="javascript:void(0)"  onclick="searchBulletin()" id="bulletinsearchingBtn"><img width="41" height="16" src="/images/botton_cgg.gif;pvcf39ec21ba3e569b"></a>
+        <a href="javascript:void(0)" onclick="searchMarket()" id = "marketsearchingBtn"><img width="41" height="16" src="/images/botton_chq.gif;pveff8329b663c1fb4"></a>
+        <input class="search1" type="text" style="height: 14px;"  onfocus="if(this.value=='输入关键字,查网站内容'){this.value='';}"
+        onblur="clearSuggest();if(this.value==''){this.value='输入关键字,查网站内容';}"
+        onkeydown="return tabfix(this.value,event,this);" onkeypress="utils.keypress2TriggerClickEvent(event,'searchsitecontent')" onkeyup="suggest(this.value,event,this,'all');" id="searchWholeSite" maxlength="50" size="21" value="输入关键字,查网站内容" name="KeyWord"/>
+        <a href="javascript:void(0)" onclick="searchNewTips()" id="searchsitecontent"><img width="36" height="16" src="/images/botton_ss.gif;pv1168c8bc0efb602b"></a>
+    </div>
+</div>
+<!--头部右边 -->
+ 
+								</div><!-- 页头结束  -->
+ 
+								<div id="page_nav"><!--中间主导航开始 -->
+									<div id="main_navi"></div>
+<script type="text/javascript" src="/js/flgz/main_menu_cn.js;pvaf540f8306bd95d6"></script>
+<script type="text/javascript" src="/js/flgz/menuList.js;pv4ec9f3843745160f"></script>
+								</div><!--中间主导航结束-->
+ 
+								<div id="page_path">
+									<div id= "path"></div>
+ <script language="JavaScript" src="/js/flgz/path.js;pv043cd5a8888bba2b"></script>
+ 
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" style="vertical-align:top;height:auto;" class="content_bg">
+ 
+								<div id="main_page">
+									<table id="Area">
+										<tr>
+											<td id="A_Area" width="192" valign="top">
+												<div id="left_page">
+													?<link href="/css/left_menu_blue_layout.css;pvb54cecf746f656c8" rel="stylesheet" type="text/css" />
+<link href="/css/left_menu_blue_css.css;pv976d18e80e5e61a2" rel="stylesheet" type="text/css" />
+ 
+<script src="/js/flgz/leftMenu_qm_css.js;pv52565ed7ca1719ac"></script>
+<div onmousemove="funLeftMenuMove(event,this);">
+<div id="left_navi_top"></div>
+<div id="left_navi" onmouseout="funLeftMenuOut(event,this);" onmouseover="funLeftMenuInner(event,this);">
+<script src="/js/flgz/leftMenu_new_css.js;pvcc709e8df400ebc9"></script></div>
+</div>
+<script type="text/javascript"> 
+	qm_create(0,true,0,500,'all',false,false,false,false);
+	
+		var searchTips = function(){
+		     var keywords = document.getElementById("leftNavKeyWord").value;
+                     if($.trim(keywords).length===0||keywords=="本站检索"){
+                                alert("请输入查询关键字.");
+                                return;
+                     }
+                     //alert(keywords);
+		     window.open("/marketservices/servicesupport/websuport/search_result.shtml?keywords="+keywords);
+		};
+	
+</script>
+<br />
+<div class="bzjs">
+<input name="KeyWord" id="leftNavKeyWord" type="text" value="本站检索" size="19" maxlength="120" border="0" onblur='if(this.value==""){this.value="本站检索";}' onfocus='if(this.value=="本站检索"){this.value="";}'  />
+		<input type="hidden" name="page" value="1" />
+		<a href="javascript:searchTips()"><img width="26" height="16" src="/images/button_go.gif;pv6446627c0d4e85b6"></a>
+</div>
+ 
+ 
+ 
+ 
+<script type="text/javascript"> 
+if (( col_id == "1845")||( col_id == "1846")||( col_id == "1847")||( col_id == "1844"))
+{
+document.write("<a href ='/marketservices/servicesupport/hotline/home/index.shtml' target='_blank'><img src ='/images/left_banner_4008888400_192.gif;pv1cb2231041b7db20' border='0'></a>");
+}
+if (( col_id == "4107"))
+{
+document.write("<a href ='https://120.204.69.22/ipo' target='_blank'><img src ='/images/left_banner_sgpt.gif' border='0'></a>");
+}
+if (( col_id == "222")||( col_id == "223"))
+{
+document.write("<a href ='/marketservices/servicesupport/hotline/home/a/20130114/trade.doc' target='_blank'><img src ='/images/left_banner_cjwd2007.jpg;pvd6b5d43747846691' border='0'></a><p></p>");
+document.write("<a href ='/marketservices/servicesupport/questions/business/trading/index.shtml' target='_blank'><img src ='/images/left_banner_ywcjwt.jpg;pv1d57ac226fd8bfc4' border='0'></a>");
+}
+if (( col_id == "231")||( col_id == "233")||( col_id == "235")||( col_id == "236")||( col_id == "220"))
+{
+document.write("<a href ='/marketservices/servicesupport/hotline/home/a/20130114/trade.doc' target='_blank'><img src ='/images/left_banner_cjwd2007.jpg;pvd6b5d43747846691' border='0'><p></p>");
+document.write("<a href ='/marketservices/servicesupport/hotline/home/index.shtml' target='_blank'><img src ='/images/left_banner_4008888400.jpg;pv16f6a1bd1f750127' border='0'></a>");
+}
+if (( col_id == "367")||( col_id == "358")||( col_id == "359")||( col_id == "362"))
+{
+document.write("<a href ='http://www.csindex.com.cn/sseportal/csiportal/zs/jbxx/daily_index_info.jsp' target='_blank'><img src ='/images/left_banner_zzzsmrbk.jpg;pvee665e8e064e71ab' border='0'>");
+document.write("<a href ='http://www.csindex.com.cn/sseportal/csiportal/indexquery.do' target='_blank'><img src ='/images/left_banner_zzzs.jpg;pve38efbf9acdb619e' border='0'></a>");
+}
+if (( col_id == "33")||( col_id == "42")||( col_id == "54")||( col_id == "55")||( col_id == "57")||( col_id == "56")||( col_id == "884")||( col_id == "674")||
+( col_id == "425")||( col_id == "428")||( col_id == "429")||( col_id == "430")||( col_id == "431")||( col_id == "434")||( col_id == "435")||( col_id == "436")||( col_id == "437")||( col_id == "319")||( col_id == "41")||( col_id == "875")||( col_id == "881")||( col_id == "882")||( col_id == "883")||( col_id == "884")||( col_id == "60")||( col_id == "580")||( col_id == "189")||( col_id == "282")||( col_id == "95")||( col_id == "7")||( col_id == "160")||( col_id == "106")||( col_id == "107")||( col_id == "132")||( col_id == "64")||( col_id == "675"))
+{
+document.write("<a href ='http://bond.sse.com.cn' target='_blank'><img src ='/images/left_banner_zqxxw_192.jpg;pv4577eb7ee5256ad9' border='0'></a>");
+}
+if (( col_id == "8")||( col_id == "15")||( col_id == "745")||( col_id == "751")||( col_id == "313")||( col_id == "360"))
+{
+document.write("<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0' width='192' height='58' ><param name='movie' value='/flash/edu_ad.swf' style='margin:10px 0 0 0;'><param name='quality' value='high'><embed src='/flash/edu_ad.swf' style='margin:10px 0 0 0;'quality='high' pluginspage='http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash' type='application/x-shockwave-flash' width='192' height='58'></embed></object>");
+}
+if (( col_id == "599"))
+{
+document.write("<a href ='/marketservices/servicesupport/hotline/home/' target='_blank'><img src ='/images/left_banner_4008888400_192.gif;pv1cb2231041b7db20' border='0'></a>");
+document.write("<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0' width='192' height='58' ><param name='movie' value='/flash/edu_ad.swf'><param name='quality' value='high'><embed src='/flash/edu_ad.swf' style='margin:10px 0 0 0;'quality='high' pluginspage='http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash' type='application/x-shockwave-flash' width='192' height='58'></embed></object>");
+}
+</script>
+ 
+												</div>
+											</td>
+											<td id="B_Area" valign="top">
+												<div id="right_page">
+													<span class="page_title">最新基金公告</span>
+													
+<div id="content_ab">
+ 
+   <div class="block_l1" >
+<h1>最新基金公告
+</h1><div class="search_all">
+<script type="text/javascript"> 
+		var showMoreConditions = function(){
+			var text = $("#moreConditionsBtn").text();
+			if(text==="更多条件"){
+				$("#moreConditionsBtn").text("减少条件");
+				$("#moreConditions").show(200);
+			}else{
+				$("#moreConditionsBtn").text("更多条件");
+				$("#moreConditions").hide(200);
+			}
+		}; 
+		
+$(document).ready(function(){
+			$("#startLatestDate").val(utils.changeDateByMonth(get_systemDate_global(),-12));
+			$("#endLatestDate").val(get_systemDate_global());
+			$("input[name=searchRange]").change(function(){
+					if($(this).attr("checked")){
+							if($(this).val()==="临时公告"){
+									$("#reportTypeContainer").empty();
+									$("#reportTypeContainer").append('<select name="reportType"><option value="t1" selected="selected">全部</option><option value="t2">发行上市公告</option><option value="t3">基金托管协议</option><option value="t4">基金契约</option><option value="t5">其它</option></select>');
+							}else if($(this).val()==="定期公告"){
+									$("#reportTypeContainer").empty();
+									$("#reportTypeContainer").append('<select name="reportType"><option value="p1" selected="selected">全部</option><option value="p2">年报</option><option value="p3">半年报</option><option value="p4">第一季度季报</option><option value="p5">第二季度季报</option><option value="p6">第三季度季报</option><option value="p7">第四季度季报</option></select>');
+							}else {
+									$("#reportTypeContainer").empty();
+									$("#reportTypeContainer").append('<select name="reportType"><option value="ALL">全部</option></select>');
+							}
+					}
+			});
+			
+		});
+		
+</script>
+ 
+<span class="form_term">
+	证券代码：<input type="text" size="10" id="productId" onblur="clearSuggest()" onkeydown="return tabfix(this.value,event,this);" onkeyup="suggest(this.value,event,this,'fund');"   onkeypress="utils.keypress2TriggerClickEvent(event,'dosearchingBtn')"><a href="/assortment/fund/list/" target="_blank">代码列表</a>
+	  检索范围:<input type="radio" border="0" checked value="全部" name="searchRange">全部
+				  <input type="radio" border="0"  value="临时公告" name="searchRange" >临时公告
+				  <input type="radio" border="0"  value="定期公告" name="searchRange">定期公告
+				  <input  type="image" src="/images/bt_go.gif" alt="" height="16" width="26" border="0" id="dosearchingBtn">
+				  <a href="javascript:void(0)" id="moreConditionsBtn" onclick="javascript:showMoreConditions()">更多条件</a>
+</span>
+ 
+<div id="moreConditions" style="display:none" >
+	披露日期:<input id="startLatestDate" name="disclosureDate" readonly="" type="text" value ="" size="10" readonly onClick="WdatePicker()">
+			至
+			<input id="endLatestDate" name="disclosureDate" readonly="" type="text" value ="" size="10" readonly onClick="WdatePicker()">
+	公告类型:<span id="reportTypeContainer"><select name="reportType"><option value="ALL">全部</option></select></span>
+</div>
+</div>
+ 
+			
+				
+				
+				
+ 
+<script type="text/javascript"> 
+		var latestFundBulletin = {};
+		latestFundBulletin.params = {'productId' :'','reportType2' : '','reportType' : '','beginDate' : '','endDate' : '','moreConditions':'false'};
+		var dosearchingBtn = function(){
+				var moreConditionsText = $("#moreConditionsBtn").text();
+				var reportType2 = $("'input:radio:checked'").val();
+				var productId = $.trim($("#productId").val());
+                                if(productId != "" && !isValidStockCode(productId)) {
+                                     alert("请输入正确的证券代码！");
+                                     return;
+                                }
+				var beginDate = '';
+				var endDate = '';
+				var reportType = '';
+				if(moreConditionsText == "减少条件"){
+					beginDate = $("#startLatestDate").val();
+					endDate = $("#endLatestDate").val();
+					reportType = $("select[name=reportType] option:selected").text();
+					latestFundBulletin.params.moreConditions = 'true';
+					if (productId.length === 0) {
+							if (!queryPeriodNotExceedXMonths(beginDate, endDate, 3)) {
+								if (!confirm("您输入的时间段大于三个月，查询将只给出自起始日期开始三个月内的数据。您要继续吗？")) {
+									return;
+								}
+								endDate = utils.changeDateByMonth(beginDate, 3);
+								$("#endDate").val(endDate);
+							}
+							} else {
+								if (!queryPeriodNotExceedXMonths(beginDate, endDate, 12)) {
+									if (!confirm("您输入的时间段大于十二个月，查询将只给出自起始日期开始十二个月内的数据。您要继续吗？")) {
+										return;
+									}
+									endDate = utils.changeDateByMonth(beginDate, 12);
+									$("#endDate").val(endDate);
+								}
+						   }
+				}else{
+				     latestFundBulletin.params.moreConditions = 'false';
+				     if (productId.length === 0) {
+							//beginDate = utils.changeDateByMonth(get_systemDate_global(),-3);
+							//endDate = utils.getNextDayBySystemDateByDay(get_systemDate_global(),1);
+							beginDate="";
+							endDate="";
+					}else{
+							//beginDate = utils.changeDateByMonth(get_systemDate_global(),-12);
+							//endDate = utils.getNextDayBySystemDateByDay(get_systemDate_global(),1);
+							beginDate="";
+							endDate="";
+					}
+				}
+				latestFundBulletin.params = utils.mergeJson(latestFundBulletin.params,{'reportType2':reportType2,'productId':productId,'beginDate':beginDate,'endDate':endDate,'reportType':reportType});
+				var url = "/disclosure/fund/announcement/fund_index_n.shtml?reportType2="+latestFundBulletin.params.reportType2+"&productId="+latestFundBulletin.params.productId+"&beginDate="+latestFundBulletin.params.beginDate+"&endDate="+latestFundBulletin.params.endDate+"&reportType="+latestFundBulletin.params.reportType+'&moreConditions='+latestFundBulletin.params.moreConditions;
+				window.open(url,"newwin");
+		};
+		$(document).ready(function(){
+			$("#dosearchingBtn").bind("click", function(){
+					dosearchingBtn();
+			});
+		});
+		
+</script>
+<ul class="tab_list_img">
+		<li id="dateSort" sortField="date" class="tab_list_img_on" ><a href="javascript:void(0)">最新基金公告</a></li>
+</ul>
+ 
+<ul class="list_ul">
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512210_20140621_1.pdf" target="_blank">关于更新景顺长城中证TMT150交易型开放式指数证券投资基金、景顺长城中证800食品饮料交易型开放式指数证券投资基金、景顺长城中证医药卫生交易型开放式指数证券投资基金网下现金发售代理机构名单的公告</a>&nbsp;&nbsp;<span class="list_date">2014-06-21</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512220_20140621_1.pdf" target="_blank">关于更新景顺长城中证TMT150交易型开放式指数证券投资基金、景顺长城中证800食品饮料交易型开放式指数证券投资基金、景顺长城中证医药卫生交易型开放式指数证券投资基金网下现金发售代理机构名单的公告</a>&nbsp;&nbsp;<span class="list_date">2014-06-21</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512230_20140621_1.pdf" target="_blank">关于更新景顺长城中证TMT150交易型开放式指数证券投资基金、景顺长城中证800食品饮料交易型开放式指数证券投资基金、景顺长城中证医药卫生交易型开放式指数证券投资基金网下现金发售代理机构名单的公告</a>&nbsp;&nbsp;<span class="list_date">2014-06-21</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512640_20140621_1.pdf" target="_blank">嘉实中证金融地产交易型开放式指数证券投资基金基金合同生效公告</a>&nbsp;&nbsp;<span class="list_date">2014-06-21</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/500015_20140620_1.pdf" target="_blank">富国基金管理有限公司关于副总经理变更的公告</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/500056_20140620_1.pdf" target="_blank">易方达基金管理有限公司关于公司旗下部分基金估值调整情况的公告</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/511990_20140620_1.pdf" target="_blank">华宝兴业基金管理有限公司关于华宝兴业现金添益交易型货币市场基金新增一级交易商的公告</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/510210_20140620_1.pdf" target="_blank">富国基金管理有限公司关于副总经理变更的公告</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512220_20140620_3.pdf" target="_blank">景顺长城中证TMT150交易型开放式指数证券投资基金基金合同内容摘要</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512220_20140620_5.pdf" target="_blank">景顺长城中证TMT150交易型开放式指数证券投资基金基金份额发售公告</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512230_20140620_2.pdf" target="_blank">景顺长城中证医药卫生交易型开放式指数证券投资基金托管协议</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512210_20140620_2.pdf" target="_blank">景顺长城中证800食品饮料交易型开放式指数证券投资基金基金合同</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512210_20140620_4.pdf" target="_blank">景顺长城中证800食品饮料交易型开放式指数证券投资基金托管协议</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512230_20140620_5.pdf" target="_blank">景顺长城中证医药卫生交易型开放式指数证券投资基金基金份额发售公告</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512210_20140620_5.pdf" target="_blank">景顺长城中证800食品饮料交易型开放式指数证券投资基金基金份额发售公告</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512230_20140620_4.pdf" target="_blank">景顺长城中证医药卫生交易型开放式指数证券投资基金基金合同</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512230_20140620_3.pdf" target="_blank">景顺长城中证医药卫生交易型开放式指数证券投资基金招募说明书</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512210_20140620_3.pdf" target="_blank">景顺长城中证800食品饮料交易型开放式指数证券投资基金基金合同内容摘要</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512210_20140620_1.pdf" target="_blank">景顺长城中证800食品饮料交易型开放式指数证券投资基金招募说明书</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+<li><a  href="/disclosure/fund/announcement/c/2014-06-20/512230_20140620_1.pdf" target="_blank">景顺长城中证医药卫生交易型开放式指数证券投资基金基金合同内容摘要</a>&nbsp;&nbsp;<span class="list_date">2014-06-20</span></li>
+ 
+ 
+ 
+</ul>
+</div>
+ 
+ 
+</div>
+ 
+												</div>
+											</td>
+										</tr>
+									</table>
+ 
+								</div>
+							</td>
+						</tr>
+						<tr height="80"  class="targetTR">
+							<td valign="bottom">
+								<div id="footer">
+									<div class="footer_bj">
+ 
+	<span class="bottom_font">
+		<a href="/aboutus/contactus/index.shtml">联系我们</a>|
+		<a href="/marketservices/servicesupport/websuport/feedback/index.shtml">用户反馈</a>|
+		<a href="/marketservices/servicesupport/websuport/map/index.shtml">网站地图</a>|
+		<a href="/marketservices/servicesupport/websuport/links/index.shtml">相关链接</a>|
+		<a href="/marketservices/servicesupport/websuport/legal/index.shtml">法律声明</a>|
+		<a href="/aboutus/sseintroduction/trademark/index.shtml">注册商标</a>
+	</span>
+	
+	<span class="font_white bottom_font">
+		?上海证券交易所版权所有 2010       沪ICP备<a target="_blank" href="http://www.miibeian.gov.cn/">05004045</a>号       建议使用IE7.0+浏览器，1024x768分辨率
+	</span>
+ 
+</div>
+ 
+ 
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td id="right_shadow">&nbsp;</td>
+			</tr>
+		</table>
+	</body>
+</html>
+ 
+<script type="text/javascript" language="javascript"> 
+	jQuery( function() {
+ 
+		var a_width = jQuery("#A_Area").width();
+		var b_width = jQuery("#B_Area").width();
+ 
+                var area_width;
+            
+               area_width  = a_width + b_width + 10;
+		if (area_width < 1004) {                    
+			area_width = 1004;
+		}
+ 
+		jQuery("#Area").css("width", area_width);
+                jQuery(".targetTR").css("background","#FFFFFF");    
+                jQuery("#B_Area").css("background","#FFFFFF");  
+                jQuery("#A_Area").css("background","#efefef");    
+ 
+ 
+	});
+</script>
+

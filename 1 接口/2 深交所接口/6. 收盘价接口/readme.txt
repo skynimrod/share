@@ -1,0 +1,1 @@
+. http://www.szse.cn/szseWeb/ShowReport.szse?SHOWTYPE=xlsx&CATALOGID=1815_stock&tab1PAGENO=1&ENCODE=1&TABKEY=tab1

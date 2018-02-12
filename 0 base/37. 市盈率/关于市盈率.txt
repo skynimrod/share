@@ -1,0 +1,10 @@
+. 参见:
+
+      http://baike.baidu.com/link?url=uqCSVFAp4-UrnuhnVcJVObtjIJCunwDsgnJI0SdBNCDDUJsQZyqvtqwS6D7oUvO2x4kts6XAqj2mbaftOyl42-a85uN0cNta2eF0uidf9L8-5w1mOAXp73iUje2s-WVTXLKxwVvC0Ev1tC59pJ0yTa
+
+. 计算方式
+
+    静态市盈率=每股市价/上年每股收益
+
+　　动态市盈率=每股市价/通过季报数据折算的年每股收益
+　　（此处年每股收益折算方法：一季报每股收益*4或半年报每股收益/2*4或三季报每股收益/3*4或年报每股收益，以交易所公布的最新季报或年报数据计算）

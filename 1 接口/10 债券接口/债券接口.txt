@@ -1,0 +1,10 @@
+. 债券接口分为2部分， 深圳债券接口 与 沪市 债券接口
+
+
+  深市债券接口:
+
+        http://www.cninfo.com.cn/disclosure/fulltext/plate/cnszbondlatest_1m.js
+
+  沪市 债券接口:
+
+        http://www.cninfo.com.cn/disclosure/fulltext/plate/shbondlatest_1m.js

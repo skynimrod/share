@@ -1,0 +1,989 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0067)http://finance.sina.com.cn/iframe/876/20121021/6.html?from=aFinance -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<title>网页标题_栏目名称_频道名称_新浪网</title>
+<meta name="keywords" content=",">
+<meta name="description" content="此页面的说明">
+<link href="iframe_style.css" rel="stylesheet" type="text/css">
+
+<link href="iframe_style_finance.css" rel="stylesheet" type="text/css">
+<script src="iframe_common.js" type="text/javascript"></script>
+<script type="text/javascript" src="ssologin.js">
+</script>
+<!-- <script language="javascript" type="text/javascript">
+// 调 整父级frame高度
+try {document.domain = "sina.com.cn"; } catch(e) {}
+var minHeight = 100;
+var setHeight = function() {window.frameElement.height = document.body.scrollHeight < minHeight ? minHeight : document.body.scrollHeight+2; }
+window.frameElement.height = minHeight;
+var SetHeightTimeObj = setInterval(function() {try {setHeight(); } catch(e) {} }, 50);
+window.onload = function() {clearInterval(SetHeightTimeObj); setHeight(); } 
+</script> -->
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript" src="combine.source20120330.js">
+
+</script>
+<script type="text/javascript">
+//雅黑字体处理
+var str = location.href;
+var str_arr = new Array();
+str_arr = str.split('fontstyle=');
+
+if (str_arr.length == 2) {
+		str_arr[1] =str_arr[1].replace(/&.*/, "");
+		if ( str_arr[1]=='yh'){
+			var yh_css = '<link href="http://tech.sina.com.cn/css/yahei/717/2012/1119/53.css" rel="stylesheet" type="text/css" />';
+			document.write(yh_css);
+		}
+
+		if ( str_arr[1]=='noxpyh'){
+			//xp系统不应用雅黑字体 daichang add 201212071043
+			(function() {
+				var isXP = function() {
+					var sUserAgent = navigator.userAgent;
+					var isWin = (navigator.platform == "Win32") || (navigator.platform == "Windows");
+					if(isWin) {
+						var isWinXP = sUserAgent.indexOf("Windows NT 5.1") > -1 || sUserAgent.indexOf("Windows XP") > -1;
+						if(isWinXP) return true;
+					}
+					return false;
+				}();
+				if(!isXP) {
+					var yhStyle = 'body{font-family: "Microsoft Yahei","微软雅黑","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",宋体 !important;}';
+					var style="<style type=\"text/css\">" +"\n"+ yhStyle+"\n"+ "</style>";
+					document.write(style);
+
+				}
+			})();
+		}
+	}
+</script>
+
+</head>
+<body>
+<div class="blk_01 finance_blk" id="top_news_02">
+    <div class="bc">
+		<div class="menu01" id="SubShow_12">
+	    	<span id="S_Label_12_01" class="selected"><i class="imgTitle imgT03">最近访问股</i></span>
+	    	<span id="S_Label_12_02" class=""><a class="imgTitle imgT03" href="http://vip.stock.finance.sina.com.cn/portfolio/main.php" target="_blank">自选股</a></span>
+    	</div>
+
+      <div id="SubShow_12_body" class="StockList">
+
+        <div id="S_Cont_12_01" style="height:280px;">
+
+          <table cellpadding="0" cellspacing="0" width="272" align="center">
+
+            <tbody><tr class="tr-top">
+
+              <th>股票名称</th>
+
+              <th>最新价</th>
+
+              <th>涨跌幅</th>
+
+              <th class="tR">股吧</th>
+
+            </tr>
+
+            
+
+            
+
+            <tr>
+
+              <td><a href="http://biz.finance.sina.com.cn/suggest/lookup_n.php?country=stock&q=sh601299" target="_blank">中国北车</a></td>
+
+              <td class="green">　12.89</td>
+
+              <td class="green">-7.86%</td>
+
+              <td class="tR"><a href="http://guba.sina.com.cn/bar.php?name=sh601299" target="_blank">进入</a></td>
+
+            </tr>
+
+            
+
+            <tr>
+
+              <td><a href="http://biz.finance.sina.com.cn/suggest/lookup_n.php?country=stock&q=sh601766" target="_blank">中国南车</a></td>
+
+              <td class="green">　12.56</td>
+
+              <td class="green">-7.92%</td>
+
+              <td class="tR"><a href="http://guba.sina.com.cn/bar.php?name=sh601766" target="_blank">进入</a></td>
+
+            </tr>
+
+            
+
+            <tr>
+
+              <td><a href="http://biz.finance.sina.com.cn/suggest/lookup_n.php?country=stock&q=sh601989" target="_blank">中国重工</a></td>
+
+              <td class="green">　8.67</td>
+
+              <td class="green">-3.13%</td>
+
+              <td class="tR"><a href="http://guba.sina.com.cn/bar.php?name=sh601989" target="_blank">进入</a></td>
+
+            </tr>
+
+            
+
+            <tr>
+
+              <td colspan="4" class="tC">以下为热门股票</td>
+
+            </tr>
+
+            
+
+            <tr>
+
+              <td><a href="http://biz.finance.sina.com.cn/suggest/lookup_n.php?country=stock&q=sz000166" target="_blank">申万宏源</a></td>
+
+              <td class="green">　16.85</td>
+
+              <td class="green">-4.26%</td>
+
+              <td class="tR"><a href="http://guba.sina.com.cn/bar.php?name=sz000166" target="_blank">进入</a></td>
+
+            </tr>
+
+            
+
+            <tr>
+
+              <td><a href="http://biz.finance.sina.com.cn/suggest/lookup_n.php?country=stock&q=sh600030" target="_blank">中信证券</a></td>
+
+              <td class="green">　27.86</td>
+
+              <td class="green">-1.14%</td>
+
+              <td class="tR"><a href="http://guba.sina.com.cn/bar.php?name=sh600030" target="_blank">进入</a></td>
+
+            </tr>
+
+            
+
+            <tr>
+
+              <td><a href="http://biz.finance.sina.com.cn/suggest/lookup_n.php?country=stock&q=sh601988" target="_blank">中国银行</a></td>
+
+              <td class="">　4.40</td>
+
+              <td class="">0.00%</td>
+
+              <td class="tR"><a href="http://guba.sina.com.cn/bar.php?name=sh601988" target="_blank">进入</a></td>
+
+            </tr>
+
+            
+
+            <tr>
+
+              <td><a href="http://biz.finance.sina.com.cn/suggest/lookup_n.php?country=stock&q=sh601390" target="_blank">中国中铁</a></td>
+
+              <td class="green">　8.14</td>
+
+              <td class="green">-6.22%</td>
+
+              <td class="tR"><a href="http://guba.sina.com.cn/bar.php?name=sh601390" target="_blank">进入</a></td>
+
+            </tr>
+
+            
+
+            <tr>
+
+              <td><a href="http://biz.finance.sina.com.cn/suggest/lookup_n.php?country=stock&q=sh600528" target="_blank">中铁二局</a></td>
+
+              <td class="green">　15.34</td>
+
+              <td class="green">-6.69%</td>
+
+              <td class="tR"><a href="http://guba.sina.com.cn/bar.php?name=sh600528" target="_blank">进入</a></td>
+
+            </tr>
+
+            
+
+            <tr>
+
+              <td><a href="http://biz.finance.sina.com.cn/suggest/lookup_n.php?country=stock&q=sh600795" target="_blank">国电电力</a></td>
+
+              <td class="green">　4.01</td>
+
+              <td class="green">-2.43%</td>
+
+              <td class="tR"><a href="http://guba.sina.com.cn/bar.php?name=sh600795" target="_blank">进入</a></td>
+
+            </tr>
+
+            
+
+            <tr>
+
+              <td><a href="http://biz.finance.sina.com.cn/suggest/lookup_n.php?country=stock&q=sh601727" target="_blank">上海电气</a></td>
+
+              <td class="green">　10.93</td>
+
+              <td class="green">-4.54%</td>
+
+              <td class="tR"><a href="http://guba.sina.com.cn/bar.php?name=sh601727" target="_blank">进入</a></td>
+
+            </tr>
+
+            
+
+          </tbody></table>
+
+        </div>
+
+			<div id="S_Cont_12_02" style="display: none; height: 280px;" class="pf_wrap">
+
+				<div id="portfolio_loading">
+
+					读取中...
+
+				</div>
+
+				<div id="portfolio_login" style="display:none;">
+
+					<form id="formSinaSSOLogin" onsubmit="return false;">
+
+						<ul>
+
+							<li style="height:auto;">
+
+								<span id="spanSinaSSOInfo" style="padding:30px 0 20px;">请登录沪深自选</span>
+
+							</li>
+
+							<li class="nameD">
+
+								<div><label>用户名</label> <input type="text" name="id" id="inputSinaSSOLoginUser" autocomplete="off"></div>
+
+							</li>
+
+							<li class="passwordD">
+
+								<div><label>密&nbsp;&nbsp;码</label> <input type="password" id="password" name="pwd"></div>
+
+							</li>
+
+							<li class="keepTime">
+									<div><label>保存状态</label><select name="savestate" id="savestate">
+										<option value="0">不保存</option>
+										<option value="7">一周</option>
+										<option value="14">两周</option>
+										<option value="30" selected="selected">一个月</option>
+										</select>
+										</div>
+							</li>
+
+							<li class="loginD">
+
+								<input class="loginBtn" type="submit" value=""><input class="resetBtn" type="reset" value="">
+
+							</li>
+
+							<li class="regD">
+
+								<a href="http://login.sina.com.cn/signup/signup.php?entry=finance&r=http://finance.sina.com.cn/stock/" target="_blank">免费注册</a> <a href="http://login.sina.com.cn/getpass.html" target="_blank">找回密码</a> <a href="http://login.sina.com.cn/help.html" target="_blank">登录帮助</a>
+
+							</li>
+
+						</ul>
+
+					</form>
+
+				</div>
+
+				<div id="portfolio_list" style="display:none;">
+
+					<table cellpadding="0" cellspacing="0" width="272" align="center">
+
+						<tbody><tr class="tr-top">
+
+							<th>股票名称</th>
+
+							<th>最新价</th>
+
+							<th>涨跌幅</th>
+
+							<th class="tR">股吧</th>
+
+						</tr>
+
+						<!-- %
+
+						if (data["my"].length == 0) {
+
+						% -->
+
+						<tr>
+
+							<td colspan="4" class="tC">尚未添加自选, <a href="http://vip.stock.finance.sina.com.cn/portfolio/main.php" target="_blank">点击进入</a></td>
+
+						</tr>
+
+						<!-- %
+
+						}
+
+						% -->
+
+						<!-- %
+
+						if ("my" in data) {
+
+							for (var i in data["my"]) {
+
+						% -->
+
+						<tr>
+
+							<td><a $$title="$data[&#39;my&#39;][i][&#39;name&#39;]$" target="_blank" $$href="http://biz.finance.sina.com.cn/suggest/lookup_n.php?country=stock&amp;q=$data[&#39;my&#39;][i][&#39;code&#39;]$"><!-- % print(data["my"][i]["name"]); % --></a></td>
+
+							<td $$class="$data[&#39;my&#39;][i][&#39;color&#39;]$"><!-- % print(data["my"][i]["arrow"]); % --><!-- % print(data["my"][i]["price"]); % --></td>
+
+							<td $$class="$data[&#39;my&#39;][i][&#39;color&#39;]$"><!-- % print(data["my"][i]["flag"]); % --><!-- % print(data["my"][i]["rate"]); % --><!-- % print(data["my"][i]["percent"]); % --></td>
+
+							<td class="tR"><a $$href="http://guba.sina.com.cn/bar.php?name=$data[&#39;my&#39;][i][&#39;code&#39;]$" target="_blank">进入</a></td>
+
+						</tr>
+
+						<!-- %
+
+							}
+
+						}
+
+						% -->
+
+<tr>
+
+              				<td colspan="4" style="text-align:right;padding-right:5px;"><a style="" href="http://vip.stock.finance.sina.com.cn/portfolio/main.php" target="_blank">管理我的自选股</a></td>
+
+            			</tr>
+
+						<!-- %
+
+						if ("my" in data && data["my"].length < 7) {
+
+						% -->
+
+						<tr>
+
+							<td colspan="4">以下为热门股票</td>
+
+						</tr>
+
+						<!-- %
+
+						}
+
+						% -->
+
+						<!-- %
+
+						if ("hot" in data) {
+
+							for (var i in data["hot"]) {
+
+						% -->
+
+						<tr>
+
+							<td><a $$title="$data[&#39;hot&#39;][i][&#39;name&#39;]$" target="_blank" $$href="http://biz.finance.sina.com.cn/suggest/lookup_n.php?country=stock&amp;q=$data[&#39;hot&#39;][i][&#39;code&#39;]$"><!-- % print(data["hot"][i]["name"]); % --></a></td>
+
+							<td $$class="$data[&#39;hot&#39;][i][&#39;color&#39;]$"><!-- % print(data["hot"][i]["arrow"]); % --><!-- % print(data["hot"][i]["price"]); % --></td>
+
+							<td $$class="$data[&#39;hot&#39;][i][&#39;color&#39;]$"><!-- % print(data["hot"][i]["flag"]); % --><!-- % print(data["hot"][i]["rate"]); % --><!-- % print(data["hot"][i]["percent"]); % --></td>
+
+							<td><a $$href="http://guba.sina.com.cn/bar.php?name=$data[&#39;hot&#39;][i][&#39;code&#39;]$" target="_blank">进入</a></td>
+
+						</tr>
+
+						<!-- %
+
+							}
+
+						}
+
+						% -->
+
+					</tbody></table>
+
+				</div>
+
+			</div>
+
+			<!--<div id="S_Cont_12_03" class="blk_04" style="display:none;" >
+
+					${热点专题}
+
+	        </div>		-->		
+
+      </div>
+
+		<script type="text/javascript" src="hotstock_daily_a.js"></script>
+
+		<script type="text/javascript" src="MarketTS.js"></script>
+
+		<script type="text/javascript" src="SinaFinancePlatform.js"></script>
+
+		<script type="text/javascript" charset="UTF-8" src="sinaSSOManager.js"></script>
+
+		<script type="text/javascript" src="PortfolioList_3.6.js"></script>
+
+		<script type="text/javascript">
+
+			new PortfolioList({
+
+				"tab": "S_Label_12_02",
+
+				"on": "mouseover",
+
+				"target": "portfolio_list",
+
+				"login": "portfolio_login",
+
+				"form": "formSinaSSOLogin",
+
+				"info": "spanSinaSSOInfo",
+
+				"loading": "portfolio_loading",
+
+				"type": "stock",
+
+				"market": "sh",
+
+				"open": ["集合竞价", "竞价时段", "交易中", "早盘中", "午盘中"],
+
+				"hot": function () {
+
+					var __objectExclude = {"sh000001": 1, "sz399001": 1, "sh000300": 1};
+
+					var __stringKey = "hotstock_daily_a";
+
+					var __arrayHot = [];
+
+					if (__stringKey in window) {
+
+						for (var i in window[__stringKey]) {
+
+							if (!(window[__stringKey][i][0] in __objectExclude)) {
+
+								__arrayHot.push(window[__stringKey][i][0]);
+
+							}
+
+						}
+
+					}
+
+					return __arrayHot;
+
+				}(),
+
+				"check": 10 * 1000,
+
+				"my": "portfolio",
+
+				"load": 3 * 60 * 1000,
+
+				"quote": 5 * 1000,
+
+				"max": 10,   //2010
+
+				"split": true,
+
+				"list": function (__arrayList) {
+
+					return __arrayList;
+
+				},
+
+				"process": function (__stringCode, __arrayData, __arrayLast) {
+
+                                        //PATCH 2010-09-14 强制刷新
+
+					this._booleanInitialized = false;
+
+					this._booleanOpen = true;
+
+					var __arrayArrow = ["\u2191", "\u2193", "\u3000"];
+
+					//~ 证券简称,今日开盘价,昨日收盘价,最近成交价,最高成交价,最低成交价,买入价,卖出价,成交数量,成交金额,买数量一,买价位一,买数量二,买价位二,买数量三,买价位三,买数量四,买价位四,买数量五,买价位五,卖数量一,卖价位一,卖数量二,卖价位二,卖数量三,卖价位三,卖数量四,卖价位四,卖数量五,卖价位五,行情日期,行情时间
+
+					var __numberLastChangeIndex = 2;
+
+					if (__arrayLast != null) {
+
+						var __numberLastChange = __arrayLast[3] * 1 - __arrayData[3] * 1;
+
+						if (__numberLastChange > 0) {
+
+							__numberLastChangeIndex = 1;
+
+						}
+
+						else if (__numberLastChange < 0) {
+
+							__numberLastChangeIndex = 0;
+
+						}
+
+					}
+
+					var __keep = function (__number, __zero) {
+
+						try {
+
+							switch (typeof __number) {
+
+								case "number":
+
+								case "string":
+
+									__number = parseFloat(__number);
+
+									if (isNaN(__number) == true || __number == Number.POSITIVE_INFINITY || __number == Number.NEGATIVE_INFINITY) {
+
+										return "--";
+
+									}
+
+									else {
+
+										return __number.toFixed(__zero);
+
+									}
+
+								default:
+
+									return "--";
+
+							}
+
+						}
+
+						catch (e) {
+
+							return "--";
+
+						}
+
+					};
+
+					var __stringPrice = __arrayData[3] * 1 == 0 ? "--" : __keep(__arrayData[3], 2);
+
+					var __stringChange = __keep(__arrayData[3] * 1 - __arrayData[2] * 1, 2);
+
+					var __stringRate = __keep((__arrayData[3] * 1 - __arrayData[2] * 1) / __arrayData[2] * 100, 2);
+
+					var __stringFlag = "";
+
+					var __stringColor = "";
+
+					var __stringPercent = "%";
+
+					if (__stringPrice == "--") {
+
+						__stringChange = "--";
+
+						__stringRate = "--";
+
+						__stringFlag = "";
+
+						__numberLastChangeIndex = 2;
+
+						__stringColor = "";
+
+						__stringPercent = "";
+
+					}
+
+					if (__stringRate != "--") {
+
+						if (__stringRate * 1 > 0) {
+
+							__stringFlag = "+";
+
+							__stringColor = "red";
+
+						}
+
+						else if (__stringRate * 1 < 0) {
+
+							__stringColor = "green";
+
+						}
+
+						__stringPercent = "%";
+
+					}
+
+					else {
+
+						__stringChange = "--";
+
+						__stringRate = "--";
+
+						__stringFlag = "";
+
+						__numberLastChangeIndex = 2;
+
+						__stringColor = "";
+
+						__stringPercent = "";
+
+					}
+
+					var __objectData = {
+
+						"code": __stringCode,
+
+						"name": __arrayData[0],
+
+						"price": __stringPrice,
+
+						"change": __stringChange,
+
+						"rate": __stringRate,
+
+						"flag": __stringFlag,
+
+						"arrow": __arrayArrow[__numberLastChangeIndex],
+
+						"color": __stringColor,
+
+						"percent": __stringPercent
+
+					};
+
+					return __objectData;
+
+				}
+
+			});
+
+		</script>
+
+		<script type="text/javascript">
+
+			window["hot_stock_list"] = function () {
+
+				var __objectExclude = {"sh000001": 1, "sz399001": 1, "sh000300": 1};
+
+				var __stringKey = "hotstock_daily_a";
+
+				var __arrayHot = [];
+
+				if (__stringKey in window) {
+
+					for (var i in window[__stringKey]) {
+
+						if (!(window[__stringKey][i][0] in __objectExclude)) {
+
+							__arrayHot.push(window[__stringKey][i][0]);
+
+						}
+
+					}
+
+				}
+
+				return __arrayHot;
+
+			}().join(",");
+
+			var StockVisited = function () {
+
+				this.Init.apply(this, arguments);
+
+			};
+
+			StockVisited.prototype = {
+
+				_elementTarget: null,
+
+				_intMaxLength: 0,
+
+				_stringHtmlTemplate: "",
+
+				_arrayStockList: [],
+
+				_arrayHotList: [],
+
+				_arrayList: [],
+
+				_intThread: -1,
+
+				_arrayData: {},
+
+				_replace: function (_stringHtml, _stringStock) {
+
+					var _arrayData = window["hq_str_s_" + _stringStock].split(",");
+
+					//PATCH 2010-09-14 屏蔽无名称股票
+
+					if ( !_arrayData || !_stringStock || !_arrayData[0] )
+
+						return "";
+
+					_arrayData[50] = _stringStock;
+
+					_arrayData[51] = _stringStock.replace(/^s[hz]/, "");
+
+					_arrayData[52] = "";
+
+					_arrayData[54] = '　';
+
+			                _arrayData[1] = (_arrayData[1] * 1).toFixed(2);
+
+					if (_stringStock in this._arrayData) {
+
+						if (_arrayData[1] * 1 > this._arrayData[_stringStock]) {
+
+							_arrayData[54] = '↑';
+
+						}
+
+						else if (_arrayData[1] * 1 < this._arrayData[_stringStock]) {
+
+							_arrayData[54] = '↓';
+
+						}
+
+						else {
+
+							_arrayData[54] = '　';
+
+						}
+
+					}
+
+					this._arrayData[_stringStock] = _arrayData[1] * 1;
+
+					if (_arrayData[3] * 1 > 0) {
+
+						_arrayData[52] = "red";
+
+					}
+
+					if (_arrayData[3] * 1 < 0) {
+
+						_arrayData[52] = "green";
+
+					}
+
+					var _arrayKeys = _stringHtml.match(/(<!-- )?@[^@]*@( -->)?/gm);
+
+					if (_arrayKeys != null) {
+
+						for (var i = 0; i < _arrayKeys.length; i++) {
+
+							var _stringValue = _arrayData[_arrayKeys[i].replace(/(<!-- )|( -->)/g, "").replace(/@/g, "")];
+
+							_stringValue = typeof _stringValue == "undefined" ? "--" : _stringValue;
+
+							_stringHtml = _stringHtml.replace(_arrayKeys[i], _stringValue);
+
+						}
+
+					}
+
+					return _stringHtml;
+
+				},
+
+				_fill: function () {
+
+					var _stringHtmlTemplate = this._stringHtmlTemplate;
+
+					var _arrayHtml = _stringHtmlTemplate.split("<!-- @SPACE@ -->");
+
+					_stringHtmlSpace = _arrayHtml[1];
+
+					_stringHtmlTemplate = _arrayHtml[0] + _arrayHtml[2];
+
+					var _arrayHtml = _stringHtmlTemplate.split("<!-- @LOOP@ -->");
+
+					var _stringHtml = _arrayHtml[0];
+
+					var _stringHtmlLoop = _arrayHtml[1];
+
+					for (var i = 0; i < this._arrayStockList.length; i++) {
+
+						_stringHtml += this._replace(_stringHtmlLoop, this._arrayStockList[i]);
+
+					}
+
+					if (this._arrayStockList.length < this._intMaxLength - 1) {
+
+						_stringHtml += _stringHtmlSpace;
+
+					}
+
+					for (var i = 0; i < this._arrayHotList.length; i++) {
+
+						_stringHtml += this._replace(_stringHtmlLoop, this._arrayHotList[i]);
+
+					}
+
+					this._elementTarget.innerHTML = _stringHtml + _arrayHtml[2];
+
+				},
+
+				_makeList: function () {
+
+					var _stringStockList = document.cookie.match(/FINA_V_S_2=(?:[^;]*)/);
+
+					_stringStockList = _stringStockList == null ? "" : unescape(_stringStockList);
+
+					_stringStockList = ("," + _stringStockList + ",").replace(",sh000001,", ",").replace(",sz399001,", ",").replace(",sh000300,", ",").replace(/^,/, "").replace(/,$/, "");
+
+					var _arrayStockList = _stringStockList == "" ? [] : _stringStockList.replace(/^FINA_V_S_2=/, "").split(",");
+
+					this._arrayHotList = [];
+
+					if (_arrayStockList.length <  this._intMaxLength - 1) {
+
+						this._arrayStockList = _arrayStockList;
+
+						var _intHotList = this._intMaxLength - 1 - this._arrayStockList.length;
+
+						var _intCount = 0;
+
+						var _arrayHotList = window["hot_stock_list"].match(/s[hz]\d{6}/g);
+
+						_arrayHotList = _arrayHotList == null ? [] : _arrayHotList;
+
+						var _arrayHotListFormated = [];
+
+						for (var i = 0; i < _arrayHotList.length; i++) {
+
+							if (_intCount >= _intHotList) {
+
+								break;
+
+							}
+
+							if (_stringStockList.indexOf(_arrayHotList[i]) == -1) {
+
+								_arrayHotListFormated.push(_arrayHotList[i]);
+
+								_intCount++;
+
+							}
+
+						}
+
+						this._arrayHotList = _arrayHotListFormated;
+
+					}
+
+					else {
+
+						this._arrayStockList = _arrayStockList.slice(0, this._intMaxLength);
+
+					}
+
+					return this._arrayStockList.concat(this._arrayHotList);
+
+				},
+
+				_random: function () {
+
+					return (new Date()).getTime() + Math.random().toString().replace("0.", "");
+
+				},
+
+				_load: function (__stringUrl, __functionCallback, __stringCharset) {
+
+					var __elementScript = document.createElement("script");
+
+					__elementScript.type = "text/javascript";
+
+					if (typeof __stringCharset != "undefined") {
+
+						__elementScript.charset = __stringCharset;
+
+					}
+
+					__elementScript._functionCallback = typeof __functionCallback != "undefined" ?  __functionCallback : new Function();
+
+					__elementScript[document.all ? "onreadystatechange" : "onload"] = function () {
+
+						if (document.all && this.readyState != "loaded" && this.readyState != "complete") {return;}
+
+						this._functionCallback(this);
+
+						this._functionCallback = null;
+
+						this[document.all ? "onreadystatechange" : "onload"] = null;
+
+						this.parentNode.removeChild(this);
+
+					};
+
+					__elementScript.src = __stringUrl;
+
+					document.getElementsByTagName("head")[0].appendChild(__elementScript);
+
+				},
+
+				load: function () {
+
+					this._load("http://hq.sinajs.cn/rn=" + this._random() + "&list=" + this._arrayList.join(","), this._fill.Bind(this));
+
+				},
+
+				Init: function (_stringElementId, _intMaxLength) {
+
+					this._elementTarget = document.getElementById(_stringElementId);
+
+					this._intMaxLength = _intMaxLength;
+
+					this._stringHtmlTemplate = this._elementTarget.innerHTML;
+
+					var _arrayList = this._makeList();
+
+					for (var i = 0; i < _arrayList.length; i++) {
+
+						_arrayList[i] = "s_" + _arrayList[i];
+
+					}
+
+					this._arrayList = _arrayList;
+
+					this.load();
+
+					setInterval(this.load.Bind(this), 5 * 1000);
+
+				}
+
+			};
+
+			var stockVisited = new StockVisited("S_Cont_12_01", 11); //2010
+
+			var SubShow_12 = new SubShowClass("SubShow_12","onmouseover");
+
+			SubShow_12.addLabel("S_Label_12_01","S_Cont_12_01");
+
+			SubShow_12.addLabel("S_Label_12_02","S_Cont_12_02");
+
+			//SubShow_12.addLabel("S_Label_12_03","S_Cont_12_03");
+
+		</script>
+
+</div></div>
+
+</body></html>

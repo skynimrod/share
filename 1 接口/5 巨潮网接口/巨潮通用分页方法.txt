@@ -1,0 +1,241 @@
+
+/**
+ *  
+ * http://www.cninfo.com.cn/js/cninfo.core.js
+ *
+ * 定义巨潮披露系列网站的通用排序和分页JS方法
+ * @autor 王建华
+ * @date 2012-02-07
+ */
+Array.prototype.unique=function(index){
+	var res = [], hash = {};
+	var key=null;
+	for ( var i = 0;i<this.length;i++) {
+		key=this[i][index];
+		if (!hash[key]) {
+			res.push(key);
+			hash[key] = true;
+		}
+	}
+	return res;
+};
+
+/**
+ * 公告处理器，构造函数 用户对公告进行分页和排序 API afficeArray 公告列表 pageSize 页面大小 afficheBodyId
+ * 公告内容显示对象 splitPageDivId 公告分页显示对象 var handler=new
+ * AfficheHandler(xxx,20,"divId",""); handler.afficheCss=function(){};
+ * handler.splitPageCss=function(){}; handler.sort(0,true); handler.goPage(x);
+ * handler.first();
+ * 
+ */
+var AfficheHandler = function(afficheArray, pageSize, afficheBodyId,
+		splitPageDivId) {
+	//保存原始的数据	
+	this.rootAfr=new Array();
+	for(var p in afficheArray)
+    {this.rootAfr[p]=afficheArray[p];}
+	// 当前处理的数组，注意是二位数组
+	this.afr = afficheArray;
+	this.pageSize = pageSize;
+	this.domId;
+	this.currentPageNo = 1;
+	this.pageCount = 0;
+	this.startNum = 0;
+	this.endNum = 0;
+	this.afficheBodyId = afficheBodyId;
+	this.splitPageDivId = splitPageDivId;
+	/**
+	 * 用户显示公告并排序 sortIndex 排序的字段 0,1,2,3... asc boolean asc =true or asc=false
+	 * is desc
+	 */
+	this.sort = function(sortIndex, asc) {
+		// 排序以后的数组
+		if (typeof asc == "undefined") {
+			asc = true;
+		}
+		if (typeof asc == "string") {
+			asc = asc == "true" ? true : false;
+		}
+		if (typeof sortIndex == "undefined" || sortIndex == null) {
+			sortIndex = 0;
+		}
+		if (typeof sortIndex != "number") {
+			sortIndex = parseInt(sortIndex);
+		}
+		this.afr.sort(function(x, y) {
+			try {
+				if ((sortIndex + 1) > x.length || (sortIndex + 1) > y.length) {
+					return 0;
+				}
+				var sortx = x[sortIndex];
+				var sorty = y[sortIndex];
+				// 进行排序
+				if (typeof sortx == "string" && typeof sorty == "string") {
+					if (asc) {
+						return sortx.localeCompare(sorty);
+					} else {
+						return sorty.localeCompare(sortx);
+					}
+				}
+				if (typeof sortx == "number" && typeof sorty == "number") {
+					if (asc) {
+						return sortx - sorty;
+					} else {
+						return sorty - sortx;
+					}
+				}
+			} catch (e) {
+				return 0;
+			}
+		});
+		// 排序完成以后，进行分页
+		this.goPage(this.currentPageNo);
+	};
+	/**
+	 * 跳转到首页
+	 */
+	this.first = function() {
+		this.goPage(1);
+	};
+	/**
+	 * 跳转到下一页
+	 */
+	this.next = function() {
+		this.goPage(this.currentPageNo + 1);
+	};
+	/**
+	 * 跳转到前一页
+	 */
+	this.previous = function() {
+		this.goPage(this.currentPageNo - 1);
+	};
+	/**
+	 * 跳转到最后一页
+	 */
+	this.last = function() {
+		this.goPage(this.pageCount);
+	};
+	/**
+	 * 判断是否为首页
+	 */
+	this.isFirst = function() {
+		return this.currentPageNo == 1;
+	};
+	/**
+	 * 判断是否为最后一页
+	 */
+	this.isLast = function() {
+		return this.currentPageNo == this.pageCount;
+	};
+	/**
+	 * 当前页面
+	 */
+	this.getCurrentPageNo = function() {
+		return this.currentPageNo;
+	};
+	/**
+	 * 总的页码数据
+	 */
+	this.getPageCount = function() {
+		return this.pageCount;
+	};
+	/**
+	 * 总的记录数
+	 */
+	this.getSize= function() {
+		return this.afr.length;
+	};
+	/**
+	 * 统计二位对象中的非重复数量
+	 * @index 列下标 0 开始，例如公司代码在第一列 就传入0
+	*/
+	this.uniqueSize=function(index){
+		try{
+			return this.afr.unique(index).length;
+		}catch(e){
+			return 0;
+		}
+	};
+	/**
+	 * 直接跳转到某一页。
+	 */
+	this.goPage = function(pageNo) {
+		// 进行数组分页显示
+		this.currentPageNo = pageNo;
+		if (typeof this.afr == "undefined" || this.afr.constructor != Array) {
+			alert("处理的对象不是数组!");
+			return;
+		}
+		var currentPageAffiches = new Array();
+		// 查找当前的页面
+		var row = this.afr.length;
+		// 算出总的页码数量
+		this.pageCount = Math.ceil(row / this.pageSize);
+		// 处理页码的合法性
+		this.currentPageNo = this.currentPageNo > this.pageCount ? this.pageCount
+				: this.currentPageNo;
+		if (this.currentPageNo < 1) {
+			this.currentPageNo = 1;
+		}
+		// 计算开始的行数和结束的函数
+		this.startNum = this.pageSize * (this.currentPageNo - 1);
+		this.endNum = parseInt(this.startNum) + parseInt(this.pageSize);
+		if (this.endNum > row) {
+			this.endNum = row;
+		}
+		// 去子列表
+		var showContent = new Array();
+		for ( var i = this.startNum; i < this.endNum; i++) {
+			showContent.push(this.afficheCss(this.afr[i]));
+			currentPageAffiches.push(this.afr[i]);
+		}
+		try {
+			document.getElementById(this.afficheBodyId).innerHTML = showContent
+					.join("");
+		} catch (e) {
+			alert(e);
+		}
+		// 除非更新分页
+		try {
+			document.getElementById(this.splitPageDivId).innerHTML = this
+					.splitPageCss(this.currentPageNo, this.pageCount);
+		} catch (e) {
+			alert(e);
+		}
+		return currentPageAffiches;
+
+	};
+
+	/**
+	 * 显示公告数据，定义单条公告的回调 需要在各自的页面进行重载 affiche 需要显示的公告對象
+	 */
+	this.afficheCss = function(affiche) {
+		//
+		return affiche.join("-") + "<br>";
+	};
+	/**
+	 * 定义分也样式 pageNo 当前页面 pageCount 总页面大小
+	 */
+	this.splitPageCss = function(pageNo, pageCount) {
+		// TODO 实现目前巨潮网分页样式
+		return "";
+	};
+	/**
+	 * 过滤数组 searchIndex需要过滤的数组中的元素序号 searStr过滤字符串
+	 */
+	this.filter = function(searchIndex,searStr){
+		this.afr.length=0;
+		if(searStr=="" || searStr==null){		
+			for(var p in this.rootAfr)
+		    {this.afr[p]=this.rootAfr[p];}
+		}
+		else{
+			for(var i=0;i<this.rootAfr.length;i++){
+				if (this.rootAfr[i][searchIndex].indexOf(searStr)>=0)
+				{this.afr[this.afr.length]=this.rootAfr[i];}   
+			}
+		}	
+		this.first();
+	};
+	
+};

@@ -1,0 +1,60 @@
+参数:
+
+   SPY:  指定的年份
+
+   SPM:  指定的月份
+
+   SPD:  指定的日子        
+
+   LR:   最小涨幅         0-100000   缺省是30 ， 即30%
+
+   HR:   最大涨幅         0-100000   缺省是100 ， 即100%
+
+
+//LL:=IF(YEAR>SPY OR ( YEAR=SPY AND ( MONTH>SPM OR ( MONTH=SPM AND DAY>=SPD) ) ),L,0);
+//LL:=IF(YEAR>1140722 OR ( YEAR=1140722 AND ( MONTH>SPM OR ( MONTH=SPM AND DAY>=SPD) ) ),L,0);
+
+//DATE1:=(SPY-1900)*10000+SPM*100+SPD;
+//LL:=REFDATE(C,DATE1);
+LL:=BARSLAST(YEAR=SPY AND MONTH=SPM AND DAY=SPD);
+HH:=IF(YEAR>SPY OR ( YEAR=SPY AND ( MONTH>SPM OR ( MONTH=SPM AND DAY>=SPD) ) ),H,0);
+RATE:=HH/LL*100-100;
+OOO:RATE>LR AND RATE <=HR;
+
+
+
+使用说明:
+
+SPY: 指定的年份；需要减去1900   SPM： 指定的月份； SPD 指定的日。 这三个参数组成指定的具体日期。
+LR: 最小涨幅。  HR: 最大涨幅
+
+该指标选出 指定日期至今， 股票的涨幅满足小于指定涨幅的股票。  涨幅计算是从指定日期开始至今的最低价 到至今的最高价
+
+### 指定日期至今的最低价
+
+    先求有效周期数:  BARSCOUNT(year=2014 and month=7 and day=22)
+                     BARSLAST(year=2014 and month=7 and day=22)
+         x:=            BARSSINCE(year=2014 and month=7 and day=22)
+
+                 LLV(x)
+
+========
+
+上面的指标进行修正
+
+DATESET:=BARSLAST(YEAR=SPY AND MONTH=SPM AND DAY=SPD);
+LL:=LLV(L,DATESET);
+HH:=HHV(H,DATESET);
+RATE:=HH/LL*100-100;
+OOO:RATE>LR AND RATE <=HR;
+       
+===============
+
+想取5日线上穿年线时的收盘价，公式如下：
+
+DATE1:IF(CROSS(MA(CLOSE,5),MA(CLOSE,250)),DATE,0);
+CLOSE1:REFDATE(CLOSE,DATE1); 
+
+结果可以正确输出date1，但是不能输出close1，请问怎么修改？谢谢！
+
+年份需要减去1900

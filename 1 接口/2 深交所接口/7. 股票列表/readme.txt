@@ -1,0 +1,1 @@
+http://www.szse.cn/szseWeb/ShowReport.szse?SHOWTYPE=xlsx&CATALOGID=1110&tab2PAGENO=1&tab2PAGECOUNT=205&tab2RECORDCOUNT=2045&ENCODE=1&TABKEY=tab2

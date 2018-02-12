@@ -1,0 +1,13 @@
+参见:
+
+    http://www.szse.cn/main/szhk/sgtcgxx/sgtcgsl/
+
+    深圳交易所-> 首页-> 左侧的"信息导航"中的"深港通"->最上面一栏中的"深港通持股信息"->"深股通持股信息"或"港股通持股信息"
+
+. www.szse.cn/szseWeb/ShowReport.szse?SHOWTYPE=xlsx&CATALOGID=SGT_SGTCGSL&tab1PAGENO=1&ENCODE=1&TABKEY=tab1
+
+  上面的链接可以下载当天的深股通持股数量. 如果要下载制定交易日的深股通持股数量, 需要添加日期参数, 如下:
+
+   www.szse.cn/szseWeb/ShowReport.szse?SHOWTYPE=xlsx&CATALOGID=SGT_SGTCGSL&tab1PAGENO=1&ENCODE=1&TABKEY=tab1&txtDate=2018-02-08
+
+  一般深交所公布的深股通持股数量信息都是当前交易日的前一个交易日的统计数据. 可能是因为 港股闭市时间比A股晚1个小时的原因吧.举个例子, 如果周一只能查到上周5的深股通持股数据。

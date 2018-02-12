@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0067)http://finance.sina.com.cn/iframe/876/20121021/1.html?from=aFinance -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<title>网页标题_栏目名称_频道名称_新浪网</title>
+<meta name="keywords" content=",">
+<meta name="description" content="此页面的说明">
+<link href="iframe_style.css" rel="stylesheet" type="text/css">
+
+<link href="iframe_style_finance.css" rel="stylesheet" type="text/css">
+<script src="iframe_common.js" type="text/javascript"></script>
+<!-- <script type="text/javascript" src="http://news.sina.com.cn/iframe/87/2011/content.js"></script> -->
+<script type="text/javascript" src="content.js"></script>
+<script language="javascript" type="text/javascript">
+<!--//--><![CDATA[//><!--
+//调整父级frame高度
+try{document.domain = "sina.com.cn";}catch(e){}
+var minHeight = 100;
+window.frameElement.height = minHeight;
+var SetHeightTimeObj = setInterval("window.frameElement.height = document.body.scrollHeight<minHeight?minHeight:document.body.scrollHeight;",50);
+window.onload = function(){clearInterval(SetHeightTimeObj);window.frameElement.height = document.body.scrollHeight<minHeight?minHeight:document.body.scrollHeight;}
+//--><!]]>
+</script>
+
+<script type="text/javascript">
+//雅黑字体处理
+var str = location.href;
+var str_arr = new Array();
+str_arr = str.split('fontstyle=');
+
+if (str_arr.length == 2) {
+		str_arr[1] =str_arr[1].replace(/&.*/, "");
+		if ( str_arr[1]=='yh'){
+			var yh_css = '<link href="http://tech.sina.com.cn/css/yahei/717/2012/1119/53.css" rel="stylesheet" type="text/css" />';
+			document.write(yh_css);
+		}
+
+		if ( str_arr[1]=='noxpyh'){
+			//xp系统不应用雅黑字体 daichang add 201212071043
+			(function() {
+				var isXP = function() {
+					var sUserAgent = navigator.userAgent;
+					var isWin = (navigator.platform == "Win32") || (navigator.platform == "Windows");
+					if(isWin) {
+						var isWinXP = sUserAgent.indexOf("Windows NT 5.1") > -1 || sUserAgent.indexOf("Windows XP") > -1;
+						if(isWinXP) return true;
+					}
+					return false;
+				}();
+				if(!isXP) {
+					var yhStyle = 'body{font-family: "Microsoft Yahei","微软雅黑","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",宋体 !important;}';
+					var style="<style type=\"text/css\">" +"\n"+ yhStyle+"\n"+ "</style>";
+					document.write(style);
+
+				}
+			})();
+		}
+	}
+</script>
+</head>
+<body>
+<div class="blk_01 finance_blk" id="top_news_02">
+    <div class="bc">
+	<div class="menu01 twoTab">
+    	<span id="btn01" class="selected"><i class="imgTitle imgT03"><a href="http://finance.sina.com.cn/topnews/" target="_blank">24小时点击排行</a></i></span>
+    	<span id="btn02" class=""><i class="imgTitle imgT03"><a href="http://finance.sina.com.cn/topnews/" target="_blank">24小时评论排行</a></i></span>
+    </div>
+    	<div id="cont01" class="cont02">
+        	<ul class="list list_02">
+					<!-- 列表 begin -->
+   <script type="text/javascript" src="GetTopDataList.php"> 
+
+   //src的参数为排行系统生成的js链接(这里是每天，出国，取十条，顺序的取值，返回值是studyaboard_1_data是的取值链接)
+ </script>
+
+  <script language="JavaScript">
+  var MyNewsList;
+  var i;
+  var j=0;
+  var MyNews = new Object();
+  //var did="";
+  for (i in all_1_data.data) //studyaboard_1_data.data这个参数为链接返回值那个对象的名称
+ {
+   MyNewsList=all_1_data.data[i];
+    j=parseInt(i)+1;
+    if(j<10){j="0"+j;}
+
+   MyNews.i=MyNewsList['title'].substr2(0,44)  //可以在这里对标题太长的用一个新的变量对里面的变量进行处理（如标题太长）
+   //var itemsarray = new Array();
+   //itemsarray = MyNewsList['comment_url'].split(",");
+   //did = itemsarray[2];
+   //document.write("<li><label class=No"+j+"></label><a href="+MyNewsList['url']+" target=_blank>"+MyNewsList['title']+"</a></li>");
+   document.write("<li><label class=No"+j+"></label><a href="+MyNewsList['url']+" target=_blank>"+MyNews.i+"</a></li>");
+
+ //可以在这里对列表样式对应设置一般都是<li>...</li>
+
+   }
+</script><li><label class="No01"></label><a href="http://finance.sina.com.cn/chanjing/sdbd/20150201/151721447615.shtml" target="_blank">报道称毛晓峰与女员工私通 追女演员见面就送车</a></li><li><label class="No02"></label><a href="http://finance.sina.com.cn/china/20150201/034621446415.shtml" target="_blank">各行业热议延迟退休：工作积极性肯定会降低</a></li><li><label class="No03"></label><a href="http://finance.sina.com.cn/china/20150201/002421445986.shtml" target="_blank">一批法律法规今起实施 三种情况下购车可退税</a></li><li><label class="No04"></label><a href="http://finance.sina.com.cn/leadership/20150201/175221447766.shtml" target="_blank">马云目标是苹果和谷歌：腾讯百度已远远滞后阿里</a></li><li><label class="No05"></label><a href="http://finance.sina.com.cn/chanjing/gsnews/20150201/020821446194.shtml" target="_blank">墨高铁项目无限期搁置 中国铁建称正在核实情况</a></li><li><label class="No06"></label><a href="http://finance.sina.com.cn/chanjing/sdbd/20150201/111221447270.shtml" target="_blank">争议海底捞:离职员工称内部勾心斗角 心累</a></li><li><label class="No07"></label><a href="http://finance.sina.com.cn/world/20150201/023921446350.shtml" target="_blank">揭秘沙特王室：数千王子坐拥万亿财产(图)</a></li><li><label class="No08"></label><a href="http://finance.sina.com.cn/chanjing/b/20150201/082121446923.shtml" target="_blank">新年首月百城房价告别8连跌 一线城市环比全上涨</a></li><li><label class="No09"></label><a href="http://finance.sina.com.cn/chanjing/gsnews/20150201/003421445987.shtml" target="_blank">一汽整改报告自曝家丑：挪用公款建别墅未被追责</a></li><li><label class="No10"></label><a href="http://finance.sina.com.cn/china/hgjj/20150201/161121447671.shtml" target="_blank">中央发布2015年一号文件</a></li> 
+
+<!-- 列表 end -->
+
+			</ul>
+        </div>
+    	<div id="cont02" class="cont02" style="display: none;">
+        	<ul class="list list_02">
+<!-- SEO抓取区域begin -->
+
+		<li>
+			<a href="http://comment5.news.sina.com.cn/comment/comment5.html?channel=cj&newsid=31-1-21446415&style=0" target="_blank" title="各行业热议延迟退休：工作积极性肯定会降低">各行业热议延迟退休：工作积极性肯定会降低</a></li>
+
+		<li>
+			<a href="http://comment5.news.sina.com.cn/comment/comment5.html?channel=cj&newsid=31-1-21437608&style=0" target="_blank" title="小额贷款公司协会成立 接受银监会央行工作指导">小额贷款公司协会成立 接受银监会央行工作指导</a></li>
+
+		<li>
+			<a href="http://comment5.news.sina.com.cn/comment/comment5.html?channel=cj&newsid=31-1-21446194&style=0" target="_blank" title="墨高铁项目无限期搁置 中国铁建称正在核实情况">墨高铁项目无限期搁置 中国铁建称正在核实情况</a></li>
+
+		<li>
+			<a href="http://comment5.news.sina.com.cn/comment/comment5.html?channel=cj&newsid=31-1-21441649&style=0" target="_blank" title="李嘉诚千亿资金全速入欧扫货 或加快资产处置速度">李嘉诚千亿资金全速入欧扫货 或加快资产处置速度</a></li>
+
+		<li>
+			<a href="http://comment5.news.sina.com.cn/comment/comment5.html?channel=cj&newsid=31-1-21444949&style=0" target="_blank" title="2015年人民币不会持续贬值">2015年人民币不会持续贬值</a></li>
+
+		<li>
+			<a href="http://comment5.news.sina.com.cn/comment/comment5.html?channel=cj&newsid=31-1-21446414&style=0" target="_blank" title="国企改革指导意见已趋成熟 网民最期待政企分开">国企改革指导意见已趋成熟 网民最期待政企分开</a></li>
+
+		<li>
+			<a href="http://comment5.news.sina.com.cn/comment/comment5.html?channel=cj&newsid=31-1-21446081&style=0" target="_blank" title="工商总局阿里形成“依法”共识">工商总局阿里形成“依法”共识</a></li>
+
+		<li>
+			<a href="http://comment5.news.sina.com.cn/comment/comment5.html?channel=cj&newsid=31-1-21443088&style=0" target="_blank" title="2014年财政收入增速创23年新低">2014年财政收入增速创23年新低</a></li>
+
+		<li>
+			<a href="http://comment5.news.sina.com.cn/comment/comment5.html?channel=cj&newsid=31-1-21443286&style=0" target="_blank" title="高铁改变中国：200个地级市到周边市只要1小时">高铁改变中国：200个地级市到周边市只要1小时</a></li>
+
+		<li>
+			<a href="http://comment5.news.sina.com.cn/comment/comment5.html?channel=cj&newsid=31-1-21445989&style=0" target="_blank" title="美媒：美公司频遭反垄断调查 在华环境日益严峻">美媒：美公司频遭反垄断调查 在华环境日益严峻</a></li>
+
+<!-- SEO抓取区域end -->
+
+			</ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" language="javascript">
+  var SubShow_01 = new SubShowClass("none","onmouseover");
+  for(var i=1;i<3;i++)SubShow_01.addLabel("btn0"+i,"cont0"+i);
+</script>
+
+</body></html>

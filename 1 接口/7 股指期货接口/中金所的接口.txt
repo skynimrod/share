@@ -1,0 +1,3 @@
+. 关键是持仓量与交易量， 买空仓， 买多仓。
+
+  每日持仓数据   http://www.cffex.com.cn/fzjy/ccpm/
